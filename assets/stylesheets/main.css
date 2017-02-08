@@ -56,8 +56,8 @@ table {
 /* Body */
 
 body {
-  font: 300 14px Roboto, sans-serif;
-  line-height: 16px;
+  font: 300 14px "Overpass", Roboto, sans-serif;
+  line-height: 17px;
   overflow-y: scroll;
 }
 
@@ -79,8 +79,10 @@ body {
 
 /* Sidebar */
 
-#contact {
-  padding-top: 70px;
+#contact-expand {
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand;
 }
 
 /* Typography */
@@ -112,6 +114,10 @@ h3 {
 a,
 a:visited {
   color: #000;
+}
+
+a:hover {
+  color: red;
 }
 
 .nav a {

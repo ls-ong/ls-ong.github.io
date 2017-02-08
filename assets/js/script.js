@@ -104,5 +104,13 @@ $(document).ready(function() {
 	    });
 	});
 
+	/* list */
+
+	$('#contact').hide();
+
+	$('#contact-expand').click(function() {
+	    $('#contact').slideToggle(150);
+	});
+
 });
 
