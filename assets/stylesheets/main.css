@@ -141,6 +141,7 @@ a:hover {
 }
 
 .hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+  color: black;
   -webkit-transform: translateX(6px);
   transform: translateX(6px);
 }
