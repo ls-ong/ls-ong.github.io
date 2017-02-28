@@ -56,8 +56,8 @@ table {
 /* Body */
 
 body {
-  font: 300 14px "Overpass", Roboto, sans-serif;
-  line-height: 17px;
+  font: 300 15px "Overpass", "Roboto Mono", Roboto, sans-serif;
+  line-height: 18px;
   overflow-y: scroll;
 }
 
@@ -239,16 +239,20 @@ h2:after {
 
 #main-content ol {
   padding-left: 60px;
-  max-width: 70%;
+  max-width: 60%;
+}
+
+#main-content li {
+  padding-bottom: 4px;
 }
 
 #main-content img {
-  margin-right: -4px
+  margin-right: 2px
 }
 
 .content {
   padding-bottom: 30px;
-  max-width: 70%;
+  max-width: 66%;
 }
 
 .t {

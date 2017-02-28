@@ -5,6 +5,29 @@ $(document).ready(function() {
 	var ogcolor = $("body").css("background-color");
 	var old = $("#guts").html();
 
+	/*
+	var pages = ["#hexa", "#p2", "#p3", "#p4"];
+	var pagecontent = ["#hexa-new", "#p2-new", "#p3-new", "#p4-new"];
+	var pagecolor = ["#ffeee1", "#e4f1f5", "#f1f1f1", "#ebf1f1"];
+
+	for(var i = 0; i < pages.length; i++) {
+
+		$(pages[i]).hover(function(){
+			var now = $(pagecontent[i]).html();
+		    $("#guts").animate({opacity: 0}, 0, function () {
+		        $("#guts").stop().html(now).animate({opacity: 1});
+		    $("body").stop().animate({backgroundColor: pagecolor[i]}, 200);
+		    });
+		}, function () {
+			$("#guts").animate({opacity: 0}, 0, function () {
+		        $("#guts").stop().html(old).animate({opacity: 1});
+		    $("body").stop().animate({backgroundColor: ogcolor}, 200);
+		    });
+		});
+
+	}
+	*/
+
 	$("#hexa").hover(function(){
 		var now = $("#hexa-new").html();
 	    $("#guts").animate({opacity: 0}, 0, function () {
@@ -22,7 +45,7 @@ $(document).ready(function() {
 		var nowp2 = $("#p2-new").html();
 	    $("#guts").animate({opacity: 0}, 0, function () {
 	        $("#guts").stop().html(nowp2).animate({opacity: 1});
-	    $("body").stop().animate({backgroundColor: "#ebf2f4"}, 200);
+	    $("body").stop().animate({backgroundColor: "#e4f1f5"}, 200);
 	    });
 	}, function () {
 		$("#guts").animate({opacity: 0}, 0, function () {
@@ -35,7 +58,7 @@ $(document).ready(function() {
 		var nowp3 = $("#p3-new").html();
 	    $("#guts").animate({opacity: 0}, 0, function () {
 	        $("#guts").stop().html(nowp3).animate({opacity: 1});
-	    $("body").stop().animate({backgroundColor: "#eee"}, 200);
+	    $("body").stop().animate({backgroundColor: "#f1f1f1"}, 200);
 	    });
 	}, function () {
 	    $("#guts").animate({opacity: 0}, 0, function () {
@@ -48,7 +71,7 @@ $(document).ready(function() {
 		var nowp3 = $("#p4-new").html();
 	    $("#guts").animate({opacity: 0}, 0, function () {
 	        $("#guts").stop().html(nowp3).animate({opacity: 1});
-	    $("body").stop().animate({backgroundColor: "#FFF9F9"}, 200);
+	    $("body").stop().animate({backgroundColor: "#ebf1f1"}, 200);
 	    });
 	}, function () {
 	    $("#guts").animate({opacity: 0}, 0, function () {
