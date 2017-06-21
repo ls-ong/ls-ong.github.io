@@ -6,8 +6,5 @@ $(document).ready(function() {
 	}
 
 	document.querySelector('.shapes').innerHTML += html;
-
-	alert("The site's currently under construction, apologies for anything strange! 😅")
-	
 });
 
