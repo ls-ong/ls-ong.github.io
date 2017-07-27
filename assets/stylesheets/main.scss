@@ -144,7 +144,7 @@ h1, h2, h6, h3, h5, h4 {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 60px;
 }
 
@@ -207,8 +207,14 @@ nav a:hover {
 
 /* looker && index squares */
 
-.photoblock {
-  display: inline;
+.photo, 
+.visual {
+  display: inline-block;
+  width: 30%
+}
+
+.visual {
+  margin-right: 10px;
 }
 
 .square {
@@ -415,7 +421,7 @@ li {
 }
 
 $colors: #00a0e0, #e3007e, #ffec00, #4b4b4b;
-$shapes: 'a', 'i', 'c', 'd', 'e', 'f';
+$shapes: 'z','u','c','k','e','r','b','e','r','g';
 $shape-count: 60;
 
 @for $i from 1 through $shape-count {
