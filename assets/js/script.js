@@ -6,5 +6,18 @@ $(document).ready(function() {
 	}
 
 	document.querySelector('.shapes').innerHTML += html;
+
+	$('a:not(#email)').click(function(e) {
+		e.preventDefault();
+		newLocation = this.href;
+		$('body').fadeOut(100, newpage);
+		});
+
+		function newpage() {
+		window.location = newLocation;
+	}
+
+	$(body).css('display','none');
+	$(body).fadeIn(400);
 });
 
