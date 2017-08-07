@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-	var html = '';
-	for (var i = 1; i <= 60; i ++) {
-	    html += '<div class="shapec-'+i+'"><div class="random-shape"></div></div>';
-	}
+	// var html = '';
+	// for (var i = 1; i <= 60; i ++) {
+	//     html += '<div class="shapec-'+i+'"><div class="random-shape"></div></div>';
+	// }
 
-	document.querySelector('.shapes').innerHTML += html;
+	// document.querySelector('.shapes').innerHTML += html;
 
 	$('a:not(#email)').click(function(e) {
 		e.preventDefault();
@@ -19,5 +19,6 @@ $(document).ready(function() {
 
 	$(body).css('display','none');
 	$(body).fadeIn(400);
+
 });
 
