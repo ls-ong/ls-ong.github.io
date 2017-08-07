@@ -131,12 +131,12 @@ body {
 
 body {
   background-color: #fff;
-  font: 300 15px Overpass, Roboto, sans-serif;
+  font: 300 16px Overpass, Roboto, sans-serif;
   width: 96%;
 }
 
 p {
-  line-height: 21px;
+  line-height: 140%;
 }
 
 h1, h2, h6, h3, h5, h4 {
@@ -154,7 +154,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 h6 {
@@ -265,14 +265,14 @@ nav a:hover {
 }
 
 .looker-p {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 120%;
   position: absolute;
   text-align: right;
   opacity: 0;
   bottom: 20%;
   right: 2%;
   width: 88%;
-  line-height: 16px;
   color: #fff;
   transition: .2s ease-in;
 }
@@ -289,14 +289,14 @@ nav a:hover {
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 40px;
+  line-height: 105%;
   position: absolute;
   text-align: right;
   top: 20%;
   right: 2%;
   width: 98%;
   opacity: 0;
-  line-height: 36px;
   color: #fff;
   transition: .2s ease-in;
 }
@@ -373,7 +373,7 @@ h4 {
 }
 
 .textbody p {
-  line-height: 22px;
+  line-height: 140%;
   text-align: left;
   margin: 0 8px 0 0;
 }
