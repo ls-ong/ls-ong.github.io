@@ -104,9 +104,6 @@ body {
 
 /* body */
 
-.top {
-  position: relative;
-}
 
 .shapes {
   width: 100%;
@@ -115,18 +112,27 @@ body {
   overflow: hidden;
 }
 
+.top {
+  background-color: #fff;
+}
+
 .content {
   position: absolute;
 }
 
 .bod {
-  padding: 0 0 0 10%;
+  padding: 0 0 0 8%;
 }
 
 .grid {
   display: block;
   padding: 22vh 0 22vh 10%;
-  width: 60%;
+  width: 50%;
+}
+
+.blurb {
+  margin-left: 20%;
+  text-align: center;
 }
 
 body {
@@ -149,7 +155,7 @@ h1, h2, h6, h3, h5, h4 {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 60px;
 }
 
@@ -193,17 +199,22 @@ img {
   background-color: blue;
 }
 
+.flyerbody img {
+  background-color: white;
+}
+
 /* about */
 
 .header {
   position: relative;
+  margin: 0 15vh;
   padding: 10vh 0 0 0;
-  margin: 0 0 0 10vw;
+  text-align: center;
 }
 
 .grid-about {
   display: block;
-  margin: 6vh 0 0 10vw;
+  margin: 8vh 0 0 10vw;
   width: 90%;
 }
 
@@ -211,22 +222,25 @@ img {
 .about-pic {
   display: inline-block;
   vertical-align: top;
-  padding: 0 60px 0 0;
-  width: 45%;
+  width: 46%;
+}
+
+.about-pic {
+  padding: 0 4% 0 0;
 }
 
 .about-pic img {
   width: 100%;
 }
 
-.about-pic p {
-  font-size: 12px;
-  margin-top: 20px;
+.about-pic h6 {
+  font-size: 14px;
+  margin-top: 10px;
   text-align: center;
 }
 
 .about h2 {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 /* looker && index squares */
@@ -244,9 +258,13 @@ img {
 .square {
   display: inline-block;
   position: relative;
-  width: 28%;
+  width: 30%;
   margin-right: 10px;
   background-color: blue;
+}
+
+.visual, .photo {
+  width: 30%;
 }
 
 .square:before {
@@ -356,12 +374,12 @@ h4 {
 
 .nav {
   position: fixed;
-  padding-left: 3%;
-  padding-top: 6.5%;
+  padding-left: 4%;
+  padding-top: 7%;
 }
 
 .nav a {
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -373,7 +391,7 @@ h4 {
 
 .textbody, .worldbody, .flyers {
   width: 84%;
-  margin: 60px 0 0 10vw;
+  margin: 4vh 0 0 10vw;
 }
 
 .textbody p {
