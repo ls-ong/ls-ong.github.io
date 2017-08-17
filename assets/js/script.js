@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-	// var html = '';
-	// for (var i = 1; i <= 60; i ++) {
-	//     html += '<div class="shapec-'+i+'"><div class="random-shape"></div></div>';
-	// }
+	var html = '';
+	for (var i = 1; i <= 40; i ++) {
+	    html += '<div class="shapeno-'+i+'"><div class="random-shape"></div></div>';
+	}
 
-	// document.querySelector('.shapes').innerHTML += html;
+	document.querySelector('.shapes').innerHTML += html;
 
 	$('a:not(#email)').click(function(e) {
 		e.preventDefault();

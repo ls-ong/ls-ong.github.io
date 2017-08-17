@@ -371,7 +371,7 @@ h4 {
 
 .nav {
   position: fixed;
-  padding-left: 4%;
+  padding-left: 3%;
   padding-top: 7%;
 }
 
@@ -388,7 +388,7 @@ h4 {
 
 .textbody, .worldbody, .flyers {
   width: 84%;
-  margin: 4vh 0 0 10vw;
+  margin: 10vh 0 0 10vw;
 }
 
 .textbody p {
@@ -447,26 +447,28 @@ li {
 
 /* spin */
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
 .big {
   position: relative;
   margin: 0 auto;
 }
 
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
 .random-shape:after {
-    font-family: Roboto Mono;
+    font-family: 'FontAwesome';
     content: "a";
+    position: relative;
+    opacity: .8;
 }
 
-$colors: #00a0e0, #e3007e, #ffec00, #4b4b4b;
-$shapes: 'l','i','a','n';
-$shape-count: 50;
+$colors: #00a0e0, #e3007e, #ffec00;
+$shapes: '\f219','\f0c7','\f245','\f25a', '\f1c9';
+$shape-count: 40;
 
-@for $i from 1 through 25 {
-    $shape-size: random(10) + 10;
-    $rotation: random(180);
-    $speed: 15 + random(5);
+@for $i from 1 through 40 {
+    $shape-size: random(6) + 6;
+    $rotation: random(360);
+    $speed: 22 + random(5);
     $color-key: random(length($colors));
     $shape-color: nth($colors, $color-key);
     $shape-key: random(length($shapes));
@@ -481,7 +483,7 @@ $shape-count: 50;
         }
     }
   
-    .shapec-#{$i} { 
+    .shapeno-#{$i} { 
         animation: shape-#{$i} #{$speed}s linear infinite;
 
         .random-shape:after {
