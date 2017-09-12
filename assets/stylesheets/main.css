@@ -278,10 +278,9 @@ img {
 /* Flashy shit */
 
 .logo-flash {
-  margin: 0 0 20px -5px;
-  width: 80%;
-  height: auto;
-  max-height: 500px;
+  margin: 0 0 20px -10px;
+  width: 64%;
+  max-height: 400px;
 }
 
 .f-caption {
