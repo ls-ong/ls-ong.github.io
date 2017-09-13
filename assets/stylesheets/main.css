@@ -68,13 +68,24 @@ table {
   border-spacing: 0;
 }
 
+footer {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  opacity: .2;
+}
+
+footer h1 {
+  font: 300 1.4rem "Apercu", "Karla", sans-serif;
+}
+
 /*
   ========================================
   Custom styles
   ========================================
 */
 
-/* Body */
+/* Text */
 
 body {
   font: 300 16px "Apercu", "Karla", sans-serif;
@@ -89,6 +100,7 @@ p, li {
 h1, h2, h3, h4, h5, h6, #about-pic-box p {
   font: 300 1.6rem "Apercu", "Karla", sans-serif;
 }
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
@@ -265,6 +277,10 @@ a:visited {
 #about-pic-box p {
   text-align: right;
   margin: 6px 6px 0 0;
+}
+
+.credit {
+  text-align: right;
 }
 
 
