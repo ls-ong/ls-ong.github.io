@@ -12,13 +12,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Cousine:400,400i,700" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css?family=Cousine:400,400i,700" rel="stylesheet">
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/jquery.color-2.1.2.min.js"></script>
+
+    <script type="text/javascript">
+	    var alert_check = localStorage.getItem('alerted') || '';
+	    if (alert_check != 'yes') {
+	     alert("Website is currently a work in progress! Excuse the dust 😅");
+	     localStorage.setItem('alert_check','yes');
+	    }
+	</script>
   
   </head>
 
@@ -72,7 +77,7 @@
 
 			  		<div id="main-content">
 
-			  		<p class="intro">Hi, my name is Lian! It's a pleasure to meet you.<br><br> I am a second year at <a href="https://www.facebook.com/groups/1717731545171536/">UC Berkeley</a>, studying Cognitive &amp; Computer Science with a focus on Design Innovation.<br><br>Last summer, I had the pleasure of working as a Product Design intern at <a href="https://www.rainforestqa.com/">Rainforest QA</a>. At school, I serve as the Director of Marketing and a project manager for <a href="https://berkeleyinnovation.org/">Berkeley Innovation</a>, and previously I was a graphic &amp; web designer at <a href="http://innovativedesign.club/">Innovative Design</a>.<br><br>I am currently open to Product Design opportunities for summer 2018! Feel free to check out my portfolio and <a href="assets/lianResume.pdf">resume</a>, and connect with me on <a href="https://www.linkedin.com/in/lian-song/">LinkedIn</a> or reach me at <a href="mailto:hello@liansong.co" target="_self">hello@liansong.co</a>!<br><br>You can also learn more <a href="about.html" target="_self">about me</a> →</p>
+			  		<p class="intro">Hi, my name is Lian! It's a pleasure to meet you. I am a second year at <a href="https://www.facebook.com/groups/1717731545171536/">UC Berkeley</a>, studying Cognitive &amp; Computer Science with a focus on Design Innovation.<br><br>Last summer, I worked as a Product Design intern at <a href="https://www.rainforestqa.com/">Rainforest QA</a>. At school, I serve as the Director of Marketing and a project manager for <a href="https://berkeleyinnovation.org/">Berkeley Innovation</a>, and previously I was a graphic &amp; web designer at <a href="http://innovativedesign.club/">Innovative Design</a>.<br><br>I am currently open to Product Design opportunities for summer 2018! Feel free to check out my portfolio and <a href="assets/lianResume.pdf">resume</a>, and connect with me on <a href="https://www.linkedin.com/in/lian-song/">LinkedIn</a> or reach me at <a href="mailto:hello@liansong.co" target="_self">hello@liansong.co</a>!<br><br>You can also learn more <a href="about.html" target="_self" id="about-button">about me</a> <span id="arrow">→</span></p>
 			  		</div>
 			  		
 			  	</div>
@@ -91,7 +96,7 @@
 
 			  		<h1>Hexa Tea</h1>
 
-			  		<img src="assets/stylesheets/images/hexa_s.png" class="logo-flash" alt="hexa tea menu"><br>
+			  		<img src="assets/stylesheets/images/menu_s.png" class="logo-flash" alt="hexa tea menu"><br>
 			  		<p class="f-caption">A re-imagining of the teahouse experience.<br><em>UX Research, Service Design</em></p>
 
 			  	</div>
@@ -115,8 +120,8 @@
 
 			  		<h1>Berkeley Innovation Marketing</h1>
 			  		
-			  		<img src="assets/stylesheets/images/bi_s.png" class="logo-flash" alt="bi marketing flyer"><br>
-			  		<p class="f-caption">A set of design assets for Berkeley Innovation Fall 2017.<br><em>Visual Design, Adobe Creative Suite.</em></p>
+			  		<img src="assets/stylesheets/images/bi_s.png" class="logo-flash" alt="bi marketing flyer" ><br>
+			  		<p class="f-caption">Design assets for Berkeley Innovation Fall 2017.<br><em>Visual Design, Adobe Creative Suite.</em></p>
 
 			  	</div>
 			  	<div id="flyers-new" hidden="hidden">
@@ -124,7 +129,7 @@
 			  		<h1>Flyers &amp; Logos</h1>
 			  		
 			  		<img src="assets/stylesheets/images/flyers_s.png" class="logo-flash" alt="flyers logo"><br>
-			  		<p class="f-caption">A collection of visual design I've produced; primarily flyers and logos.<br><em>Visual Design, Adobe Creative Suite.</em></p>
+			  		<p class="f-caption">A collection of visual designs; primarily flyers and logos.<br><em>Visual Design, Adobe Creative Suite.</em></p>
 
 			  	</div>
 				<div id="world-new" hidden="hidden">
