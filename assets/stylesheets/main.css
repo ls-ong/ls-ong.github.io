@@ -72,7 +72,7 @@ footer {
   position: absolute;
   bottom: 10%;
   right: 10%;
-  opacity: .2;
+  opacity: .3;
 }
 
 footer h1 {
@@ -260,12 +260,12 @@ a:visited {
 }
 
 #about-pic-box {
-  width: 50%;
+  width: 40%;
   margin-bottom: 60px;
 }
 
 .intro-about {
-  width: 36%;
+  width: 46%;
   margin: 0 0 60px 2%;
 }
 
@@ -315,7 +315,7 @@ h2:after {
 }
 
 #main-content img {
-  margin-right: -2px
+  margin-right: -6px
 }
 
 .content {
@@ -338,13 +338,14 @@ img {
 
 /* Flashy shit */
 
-#guts {
+#guts, 
+#guts-about {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-#guts img {
+#guts-about img {
   width: 60%;
   margin: 0 0 10px -4px;
 }
