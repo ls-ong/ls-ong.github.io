@@ -72,7 +72,7 @@ footer {
   position: absolute;
   bottom: 10%;
   right: 10%;
-  opacity: .3;
+  opacity: .2;
 }
 
 footer h1 {
@@ -265,7 +265,7 @@ a:visited {
 }
 
 .intro-about {
-  width: 46%;
+  width: 42%;
   margin: 0 0 60px 2%;
 }
 
@@ -338,6 +338,10 @@ img {
 
 /* Flashy shit */
 
+img {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 #guts, 
 #guts-about {
   display: flex;
@@ -346,8 +350,9 @@ img {
 }
 
 #guts-about img {
-  width: 60%;
   margin: 0 0 10px -4px;
+  width: 60%;
+  max-height: 70vh;
 }
 
 #about-pic-box img {
