@@ -285,9 +285,8 @@ a:visited {
 
 
 h2 {
-  font-size: 26px;
+  font-size: 2.2rem;
   padding-bottom: 30px;
-  font-style: italic;
   max-width: 70%;
 }
 
@@ -305,7 +304,6 @@ h2:after {
   vertical-align: top;
   padding-left: none;
   display: inline-block;
-  font-style:;
   width: 30%;
 }
 
@@ -321,6 +319,30 @@ h2:after {
 .content {
   padding-bottom: 30px;
   max-width: 70%;
+}
+
+.fly, 
+.fly-p-r{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 60px 0;
+}
+
+.fly {
+  background-color: rgba(0, 0, 0, 0);
+  width: 50%;
+}
+
+.fly-p-r {
+  margin-left: 40px;
+  width: 30%;
+}
+
+.caption {
+  text-align: center;
+  width: 40%;
+  margin: 10px 0 0 16%;
+  font-size: 1.3rem;
 }
 
 .t {
