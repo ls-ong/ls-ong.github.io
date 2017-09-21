@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 @font-face{ 
   font-family: 'Apercu';
@@ -93,8 +93,8 @@ body {
 }
 
 p, li {
-  font: 300 1.6rem "Varela Round", sans-serif;
-  line-height: 130%;
+  font: 300 1.6rem "Work Sans", "Varela Round", sans-serif;
+  line-height: 122%;
 }
 
 h1, h2, h3, h4, h5, h6, #about-pic-box p {
@@ -140,7 +140,7 @@ h1 {
 
 h3 {
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 h4 {
@@ -260,7 +260,7 @@ a:visited {
 }
 
 #about-pic-box {
-  width: 40%;
+  width: 42%;
   margin-bottom: 60px;
 }
 
@@ -339,9 +339,7 @@ h2:after {
 }
 
 .caption {
-  text-align: center;
-  width: 40%;
-  margin: 10px 0 0 16%;
+  margin: 10px 0 10px 1%;
   font-size: 1.3rem;
 }
 
@@ -362,6 +360,7 @@ img {
 
 img {
   background-color: rgba(255, 255, 255, 0.4);
+  margin-left: -2px;
 }
 
 #guts, 
@@ -371,7 +370,7 @@ img {
   align-items: flex-start;
 }
 
-#guts-about img {
+#guts-about img:not(#about-pic) {
   margin: 0 0 10px -4px;
   width: 60%;
   max-height: 70vh;
