@@ -92,7 +92,7 @@ $(document).ready(function() {
     $(".hvr-backward").click(function(e){
         redirect = $(this).attr("href");
         e.preventDefault();
-        $("#guts p, .nav").fadeOut(100, function(){
+        $("body").fadeOut(100, function(){
             document.location.href = redirect
         });
     });
@@ -100,7 +100,7 @@ $(document).ready(function() {
     $("#lian-home-button").click(function(e){
         redirect = $(this).attr("href");
         e.preventDefault();
-        $("#guts, .nav").fadeOut(100, function(){
+        $("body").fadeOut(100, function(){
             document.location.href = redirect
         });
     });
