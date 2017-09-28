@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Hey, I made this website! Welcome in :^) -->
 <html lang="en">
 
   <head>
@@ -16,139 +17,123 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/jquery.color-2.1.2.min.js"></script>
-
-    <script type="text/javascript">
-	    var alert_check = localStorage.getItem('alert_check') || '';
-	    if (alert_check != 'yes') {
-	     alert("Website is currently a work in progress! Excuse the dust 😅");
-	     localStorage.setItem('alert_check','yes');
-	    }
-	</script>
   
   </head>
 
-  <body bgcolor="#f8f8f8">
+  <body bgcolor="#eeeeff">
 
-  	<div id="earth-p" style="height: 100vh; width: 100vw; position: absolute; z-index: -1; background-position: 0 -20px;
-  	background-image: url(assets/stylesheets/images/blobs.jpg);" hidden="hidden"></div>
+  	<div id="earth-p" hidden="hidden"></div>
 
-  	<section class="grid">
-	  	<div id="page-wrap">
+	<div id="guts-about">
+		<h1>Lian Song &mdash;<br>Product Designer &amp; Developer</h1>
 
-			<!--Sidebar-->
-
-			<header class="col-1-5">
-
-		        <nav class="nav">
-		        	<h1>&emsp;</h1>
-				  	<h3>Product</h3>
-				  		
-				  		<ul>
-				  			<li><a href="rainforest.html" id="rainf" class="hvr-backward">Rainforest QA</a></li>
-				  			<li><a href="hexa.html" id="hexa" class="hvr-backward">Hexa Tea</a></li>
-				  			<li><a href="actransit.html" id="act" class="hvr-backward">AC Transit</a></li>
-				  			<li><a href="divein.html" id="dive" class="hvr-backward">Dive In</a></li>
-				  		</ul>
-
-				  	<h3>Visual</h3>
-
-				  		<ul>
-				  			<li><a href="bimarketing.html" id="bi" class="hvr-backward">BI Marketing</a></li>
-				  			<li><a href="flyers.html" id="flyers" class="hvr-backward">Flyers &amp; Logos</a></li>
-				  		</ul>
-
-				  	<h3>Photo</h3>
-				  		
-				  		<ul>
-				  			<li><a href="world.html" id="world" class="hvr-backward">World</a></li>
-				  		</ul>
-
-				</nav>
-
-			</header><!--
-
-			Main
-
-		 --><div class="col-4-5">
-
-			  	<div id="guts-about">
-
-			  		<h1 a href="index.html" id="lian-home-button">Lian Song</h1>
-
-			  		<div id="main-content">
-
-				  		<p class="intro">Hi, my name is Lian! It's a pleasure to meet you. I am a second year at <a href="https://www.facebook.com/groups/1717731545171536/">UC Berkeley</a>, studying Cognitive &amp; Computer Science with a focus on Design Innovation.<br><br>Last summer, I worked as a Product Design intern at <a href="https://www.rainforestqa.com/">Rainforest QA</a>. At school, I serve as the Director of Marketing and a project manager for <a href="https://berkeleyinnovation.org/">Berkeley Innovation</a>, and previously I was a graphic &amp; web designer at <a href="http://innovativedesign.club/">Innovative Design</a>.<br><br>I am currently open to Product Design opportunities for summer 2018! Feel free to check out my portfolio and <a href="assets/lianResume.pdf">resume</a>, and connect with me on <a href="https://www.linkedin.com/in/lian-song/">LinkedIn</a> or reach me at <a href="mailto:hello@liansong.co" target="_self">hello@liansong.co</a>!<br><br>You can also learn more <a href="about.html" target="_self" id="about-button">about me</a> <span id="arrow">→</span></p>
-				  		
-			  		</div>
-			  		
-			  	</div>
-		  		<!--Hidden-->
-
-		  		<div class="hidden">
-
-		  		<div id="rainf-new" hidden="hidden">
-
-			  		<h1>Rainforest QA</h1>
-					<img src="assets/stylesheets/images/rfqa_s.png" class="logo-flash" alt="rainforest screen">
-			  		<br>
-			  		<p class="f-caption">A quest to automate quality assurance.<br><em>Interaction Design, UI/UX</em></p>
-
-			  	</div>
-			  	<div id="hexa-new" hidden="hidden">
-
-			  		<h1>Hexa Tea</h1>
-
-			  		<img src="assets/stylesheets/images/menu_s.png" class="logo-flash" alt="hexa tea menu"><br>
-			  		<p class="f-caption">Re-imagining the teahouse experience.<br><em>UX Research, Service Design</em></p>
-
-			  	</div>
-			  	<div id="act-new" hidden="hidden">
-
-			  		<h1>AC Transit</h1>
-			  		
-			  		<img src="assets/stylesheets/images/screens_s.png" class="logo-flash" alt="ac transit pointers"><br>
-			  		<p class="f-caption">Making the bus system accessible for all.<br><em>Mobile App Design, UI/UX</em></p>
-
-			  	</div>
-			  	<div id="dive-new" hidden="hidden">
-
-			  		<h1>Dive In</h1>
-			  		
-			  		<img src="assets/stylesheets/images/divein_s.png" class="logo-flash" alt="dive in float"><br>
-			  		<p class="f-caption">An event page for community engagement.<br><em>Web Design, UI/UX</em></p>
-
-			  	</div>
-			  	<div id="bi-new" hidden="hidden">
-
-			  		<h1>Berkeley Innovation Marketing</h1>
-			  		
-			  		<img src="assets/stylesheets/images/bi_s.png" class="logo-flash" alt="bi marketing flyer" ><br>
-			  		<p class="f-caption">Design assets for Berkeley Innovation Fall 2017.<br><em>Visual Design, Adobe Creative Suite.</em></p>
-
-			  	</div>
-			  	<div id="flyers-new" hidden="hidden">
-
-			  		<h1>Flyers &amp; Logos</h1>
-			  		
-			  		<img src="assets/stylesheets/images/flyers_s.png" class="logo-flash" alt="flyers logo"><br>
-			  		<p class="f-caption">A collection of visual designs; primarily flyers and logos.<br><em>Visual Design, Adobe Creative Suite.</em></p>
-
-			  	</div>
-				<div id="world-new" hidden="hidden">
-
-			  		<h1>World</h1>
-			  		<p class="f-caption">Moments in a life.<br><em>Photography</em></p>
-
-			  	</div>
-
-			  	</div>
-		  	</div>
+		<div class="subh">
+			<h4>Cognitive Science student at UC Berkeley; formerly Product Design intern at <a href="https://www.rainforestqa.com/">Rainforest QA</a>, currently Director of Marketing at <a href="https://berkeleyinnovation.org/">Berkeley Innovation</a>. Find out more <a href="about.html" target="_self" id="about-button">about me</a> <span id="arrow">→</span></h4>
 		</div>
-	</section>
+	</div>
+    
+    <nav class="nav">
+    	<div class="bar">
+		  	<h5>Product</h5>
+		  		
+		  		<ul>
+		  			<li><a href="rainforest.html" id="rainf" class="hvr-backward">Rainforest QA</a></li>
+		  			<li><a href="hexa.html" id="hexa" class="hvr-backward">Hexa Tea</a></li>
+		  			<li><a href="actransit.html" id="act" class="hvr-backward">AC Transit</a></li>
+		  			<li><a href="divein.html" id="dive" class="hvr-backward">Dive In</a></li>
+		  		</ul>
+	  	</div>
+
+	  	<div class="bar">
+		  	<h5>Visual</h5>
+
+		  		<ul>
+		  			<li><a href="bimarketing.html" id="bi" class="hvr-backward">BI Marketing</a></li>
+		  			<li><a href="flyers.html" id="flyers" class="hvr-backward">Flyers &amp; Logos</a></li>
+		  		</ul>
+	  	</div>
+
+	  	<div class="bar">
+	  	<h5>Photo</h5>
+	  		
+	  		<ul>
+	  			<li><a href="world.html" id="world" class="hvr-backward">Collection #1</a></li>
+	  		</ul>
+	  	</div>
+
+	  	<div class="bar bar2">
+	  	<h5>Let's connect!</h5>
+
+	  		<ul>
+	  			<li><a href="mailto:hello@liansong.co" target="_self">hello@liansong.co</a></li>
+	  			<li><a href="assets/lianResume.pdf">Resume</a></li>
+	  			<li><a href="https://www.linkedin.com/in/lian-song/">LinkedIn</a></li>
+	  		<ul>
+
+	</nav>
+
+	<!--Hidden-->
+
+	<div class="hidden">
+
+	  	<div id="rainf-new" hidden="hidden">
+
+	  		<h3>Rainforest QA</h3>
+	  		<p class="f-caption">A quest to automate quality assurance.<br><em>Interaction Design, UI/UX</em></p>
+
+			<img src="assets/stylesheets/images/rfqa_s.png" class="logo-flash" alt="rainforest screen">
+
+	  	</div>
+	  	<div id="hexa-new" hidden="hidden">
+
+	  		<h3>Hexa Tea</h3>
+	  		<p class="f-caption">Re-imagining the teahouse experience.<br><em>UX Research, Service Design</em></p>
+
+	  		<img src="assets/stylesheets/images/menu_s.png" class="logo-flash" alt="hexa tea menu"><br>
+
+	  	</div>
+	  	<div id="act-new" hidden="hidden">
+
+	  		<h3>AC Transit</h3>
+	  		<p class="f-caption">Making the bus system accessible for all.<br><em>Mobile App Design, UI/UX</em></p>
+	  		
+	  		<img src="assets/stylesheets/images/screens_s.png" class="logo-flash" alt="ac transit pointers"><br>
+
+	  	</div>
+	  	<div id="dive-new" hidden="hidden">
+
+	  		<h3>Dive In</h3>
+	  		<p class="f-caption">An event page for community engagement.<br><em>Web Design, UI/UX</em></p>
+	  		
+	  		<img src="assets/stylesheets/images/divein_s.png" class="logo-flash" alt="dive in float"><br>
+
+	  	</div>
+	  	<div id="bi-new" hidden="hidden">
+
+	  		<h3>Berkeley Innovation Marketing</h3>
+	  		<p class="f-caption">Design assets for Berkeley Innovation Fall 2017.<br><em>Visual Design, Adobe Creative Suite.</em></p>
+	  		
+	  		<img src="assets/stylesheets/images/bi_s.png" class="logo-flash" alt="bi marketing flyer" ><br>
+
+	  	</div>
+	  	<div id="flyers-new" hidden="hidden">
+
+	  		<h3>Flyers &amp; Logos</h3>
+	  		<p class="f-caption">A collection of flyers and logos.<br><em>Visual Design, Adobe Creative Suite.</em></p>
+
+	  		
+	  		<img src="assets/stylesheets/images/flyers_s.png" class="logo-flash" alt="flyers logo"><br>
+	  	</div>
+		<div id="world-new" hidden="hidden">
+
+	  		<h3>Collection #1</h3>
+	  		<p class="f-caption">Moments in a life.<br><em>Photography</em></p>
+
+	  	</div>
+	</div>
 
 	<footer>
 		<h1 class="credit">&#60;&#47;&#62; by Lian</h1>
 	</footer>
 
   </body>
-
