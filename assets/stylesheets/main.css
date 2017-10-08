@@ -59,6 +59,18 @@ table {
   Custom styles
   ========================================
 */
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3); }
+
 /* Text */
 body {
   font: 300 16px "Apercu", "Karla", sans-serif;
@@ -91,13 +103,13 @@ a:visited {
   color: #000; }
 
 a:hover {
-  color: blue; }
+  color: #4747ff; }
 
 .bar a:hover {
   color: black; }
 
 .bar2 a:hover {
-  color: blue; }
+  color: #4747ff; }
 
 nav a {
   text-decoration: none; }
@@ -124,7 +136,7 @@ nav a {
   transform: translateX(6px); }
 
 #about-button:hover ~ #arrow {
-  color: blue; }
+  color: #4747ff; }
 
 .nav2:hover {
   -webkit-transform: translateX(-4px);
@@ -147,29 +159,17 @@ footer h1 {
   color: black; }
 
 h1 #lian-home-button:hover {
-  color: blue; }
+  color: #4747ff; }
 
 .nav {
   position: absolute;
-  bottom: 10vh;
-  left: 8vw; }
+  bottom: 9vh;
+  left: 7%; }
 
 .nav2 {
   position: fixed;
   top: 12%;
   left: 4%; }
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px; }
-
-::-webkit-scrollbar-track {
-  background: transparent; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.3); }
 
 /* Flashes */
 #earth-p {
@@ -178,7 +178,8 @@ h1 #lian-home-button:hover {
   position: absolute;
   z-index: -1;
   background-position: 0 -20px;
-  background-image: url(images/blobs.jpg); }
+  background-image: url(images/blobs.jpg);
+  overflow: hidden; }
 
 /* Grid */
 *,
@@ -191,7 +192,7 @@ h1 #lian-home-button:hover {
 .col-1-2 {
   display: inline-block;
   vertical-align: top;
-  width: 42%;
+  width: 45%;
   padding: 0 4px 60px 0; }
 
 .col-1-2 img {
@@ -210,7 +211,7 @@ img {
 
 #guts-about {
   position: absolute;
-  left: 8%;
+  left: 7%;
   top: 10vh;
   width: 90%;
   height: 90vh; }
@@ -224,6 +225,7 @@ img {
   #guts-about h4,
   #guts-about .f-caption {
     font: 400 2.2rem "Work Sans", sans-serif;
+    width: 96%;
     line-height: 130%; }
   #guts-about .f-caption {
     width: 50%; }
@@ -231,21 +233,17 @@ img {
     width: 70%; }
   #guts-about .subh {
     width: 80%;
-    margin-top: 40px; }
+    margin-top: 36px; }
 
 #guts {
-  width: 80vw;
-  margin: 10vh 0 10vh 12vw; }
+  margin: 8vh 0 10vh 10vw; }
   #guts h1 {
     font-weight: 700;
-    font-size: 5.4rem; }
+    font-size: 6.2rem;
+    line-height: 100%; }
   #guts h4 {
-    font-size: 2.1rem;
-    margin: 8px 0 36px 0; }
-
-#main-content h1 {
-  font-size: 2.1rem;
-  margin-bottom: 20px; }
+    font: 400 2rem "Work Sans", sans-serif;
+    margin: 4px 0 42px 0; }
 
 #title {
   margin-left: 0; }
@@ -256,68 +254,104 @@ img {
   margin-right: 40px; }
 
 .bar2 {
-  margin-left: 80px; }
+  margin-left: 100px; }
 
 /* Index and About */
-.intro-about {
-  width: 46%;
-  margin: 1% 0 0 2%;
-  display: inline-block;
-  vertical-align: top; }
-
 #about-box {
-  position: absolute;
-  top: 11%;
-  left: 2%;
-  margin-bottom: 60px; }
+  margin: 10vh 0 10vh 2vw; }
+  #about-box img {
+    width: 44%;
+    min-width: 400px; }
 
-#about-pic {
-  width: 40%;
-  min-width: 400px; }
+.intro-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 44%;
+  margin: 1% 0 0 1%; }
+
+#about-me {
+  position: fixed;
+  padding-left: 1vw; }
 
 .credit {
   text-align: right; }
 
 /* Bodies */
+/*
+
 h2 {
   font-size: 2.2rem;
   padding-bottom: 30px;
-  max-width: 70%; }
+  max-width: 90%;
+}
 
 h2:after {
   content: '';
   display: block;
   background: black;
   height: 2px;
-  max-width: 14%;
+  width: 24%;
+  margin: 16px auto auto 0;
+}
+
+*/
+#main-content {
+  max-width: 72%; }
+  #main-content h1, #main-content h2 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-bottom: 20px; }
+  #main-content h2 {
+    font-size: 3.2rem; }
+  #main-content p,
+  #main-content ol {
+    margin-bottom: 30px;
+    line-height: 130%; }
+  #main-content img {
+    margin-bottom: 30px;
+    max-width: 100%; }
+  #main-content .mult-img {
+    margin-bottom: 30px; }
+  #main-content .mult-img img {
+    margin-bottom: 0;
+    vertical-align: middle; }
+  #main-content .mult-img img:not(:last-child) {
+    margin-right: -4px; }
+  #main-content .caption {
+    margin: -14px 0 40px 0;
+    font-size: 1.3rem;
+    text-align: center; }
+  #main-content .dropquote {
+    vertical-align: top;
+    padding-left: none;
+    display: inline-block;
+    width: 30%; }
+  #main-content ol,
+  #main-content ul {
+    padding-left: 60px;
+    max-width: 96%; }
+  #main-content .mult {
+    margin: 0 0 6px -6px;
+    min-width: 250px;
+    vertical-align: middle; }
+
+.divide:before {
+  content: '';
+  display: block;
+  background: black;
+  height: 1px;
   width: 100%;
-  margin: 16px auto auto 0; }
+  margin: 0 0 30px 0;
+  opacity: 0.1; }
 
-#main-content .dropquote {
-  vertical-align: top;
-  padding-left: none;
-  display: inline-block;
-  width: 30%; }
+#img-stack img:not(:last-child) {
+  margin-bottom: 2px; }
 
-#main-content ol {
-  padding-left: 60px;
-  max-width: 70%; }
+#thirds img {
+  max-width: 33%; }
 
-#main-content img {
-  margin-right: -6px;
-  min-width: 400px; }
-
-#main-content .mult {
-  margin: 0 0 6px -6px;
-  min-width: 250px;
-  vertical-align: middle; }
-
-.content {
-  padding-bottom: 30px;
-  max-width: 70%; }
-
-.t {
-  padding-top: 30px; }
+#halfs img {
+  max-width: 49%; }
 
 .aop {
   padding-bottom: 10px; }
@@ -337,14 +371,11 @@ h2:after {
   margin-left: 40px;
   width: 30%; }
 
-.caption {
-  margin: 10px 0 10px 1%;
-  font-size: 1.4rem; }
-
 /* Flashes */
 .logo-flash {
   position: absolute;
-  width: 64%;
+  max-width: 66%;
+  min-width: 600px;
   left: 30%;
   top: 2%;
   z-index: -1; }

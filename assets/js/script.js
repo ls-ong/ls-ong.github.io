@@ -105,6 +105,14 @@ $(document).ready(function() {
         });
     });
 
+	$("#about-button").click(function(e){
+        redirect = $(this).attr("href");
+        e.preventDefault();
+        $("body").fadeOut(100, function(){
+            document.location.href = redirect
+        });
+    });
+
 	/* pics */
 
 

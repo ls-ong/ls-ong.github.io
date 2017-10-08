@@ -75,6 +75,22 @@ table {
   ========================================
 */
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
 /* Text */
 
 body {
@@ -116,7 +132,7 @@ a:visited {
 }
 
 a:hover {
-  color: blue;
+  color: #4747ff;
 }
 
 .bar a:hover {
@@ -124,7 +140,7 @@ a:hover {
 }
 
 .bar2 a:hover {
-  color:blue;
+  color: #4747ff;
 }
 
 nav a {
@@ -156,7 +172,7 @@ nav a {
 }
 
 #about-button:hover ~ #arrow {
-  color: blue;
+  color: #4747ff;
 }
 
 .nav2:hover {
@@ -185,35 +201,19 @@ footer h1 {
 }
 
 h1 #lian-home-button:hover {
-  color: blue;
+  color: #4747ff;
 }
 
 .nav {
   position: absolute;
-  bottom: 10vh;
-  left: 8vw;
+  bottom: 9vh;
+  left: 7%;
 }
 
 .nav2 {
   position: fixed;
   top: 12%;
   left: 4%;
-}
-
-/* Scrollbar */
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Flashes */
@@ -225,6 +225,7 @@ h1 #lian-home-button:hover {
   z-index: -1; 
   background-position: 0 -20px;
   background-image: url(images/blobs.jpg);
+  overflow: hidden;
 }
 
 /* Grid */
@@ -240,7 +241,7 @@ h1 #lian-home-button:hover {
 .col-1-2 {
   display: inline-block;
   vertical-align: top;
-  width: 42%;
+  width: 45%;
   padding: 0 4px 60px 0;
 }
 
@@ -263,7 +264,7 @@ img {
 
 #guts-about {
   position: absolute;
-  left: 8%;
+  left: 7%;
   top: 10vh;
   width: 90%;
   height: 90vh;
@@ -280,6 +281,7 @@ img {
   h4,
   .f-caption {
     font: 400 2.2rem "Work Sans", sans-serif;
+    width: 96%;
     line-height: 130%;
   }
 
@@ -293,29 +295,22 @@ img {
 
   .subh {
     width: 80%;
-    margin-top: 40px;
+    margin-top: 36px;
   }
 }
 
 #guts {
-  width: 80vw;
-  margin: 10vh 0 10vh 12vw;
+  margin: 8vh 0 10vh 10vw;
 
   h1 {
     font-weight: 700;
-    font-size: 5.4rem;
+    font-size: 6.2rem;
+    line-height: 100%;
   }
 
   h4 {
-    font-size: 2.1rem;
-    margin: 8px 0 36px 0;
-  }
-}
-
-#main-content {
-  h1 {
-    font-size: 2.1rem;
-    margin-bottom: 20px;
+    font: 400 2rem "Work Sans", sans-serif;
+    margin: 4px 0 42px 0;
   }
 }
 
@@ -330,28 +325,30 @@ img {
 }
 
 .bar2 {
-  margin-left: 80px;
+  margin-left: 100px;
 }
 
 /* Index and About */
 
-.intro-about {
-  width: 46%;
-  margin: 1% 0 0 2%;
+#about-box {
+  margin: 10vh 0 10vh 2vw;
+
+  img {
+    width: 44%;
+    min-width: 400px;
+  }
+}
+
+.intro-text {
   display: inline-block;
   vertical-align: top;
+  width: 44%;
+  margin: 1% 0 0 1%;
 }
 
-#about-box {
-  position: absolute;
-  top: 11%;
-  left: 2%;
-  margin-bottom: 60px;
-}
-
-#about-pic {
-  width: 40%;
-  min-width: 400px;
+#about-me {
+    position: fixed;
+    padding-left: 1vw;
 }
 
 .credit {
@@ -360,10 +357,12 @@ img {
 
 /* Bodies */
 
+/*
+
 h2 {
   font-size: 2.2rem;
   padding-bottom: 30px;
-  max-width: 70%;
+  max-width: 90%;
 }
 
 h2:after {
@@ -371,41 +370,95 @@ h2:after {
   display: block;
   background: black;
   height: 2px;
-  max-width: 14%;
-  width: 100%;
+  width: 24%;
   margin: 16px auto auto 0;
 }
 
-#main-content .dropquote {
-  vertical-align: top;
-  padding-left: none;
-  display: inline-block;
-  width: 30%;
+*/
+
+#main-content {
+  max-width: 72%;
+
+  h1, h2 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  p, 
+  ol {
+    margin-bottom: 30px;
+    line-height: 130%;
+  }
+
+  img {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .mult-img {
+    margin-bottom: 30px;
+  }
+
+  .mult-img img {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+  .mult-img img:not(:last-child) {
+    margin-right: -4px;
+  }
+
+  .caption {
+    margin: -14px 0 40px 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .dropquote {
+    vertical-align: top;
+    padding-left: none;
+    display: inline-block;
+    width: 30%;
+  }
+
+  ol,
+  ul {
+    padding-left: 60px;
+    max-width: 96%;
+  }
+
+  .mult {
+    margin: 0 0 6px -6px;
+    min-width: 250px;
+    vertical-align: middle;
+  }
 }
 
-#main-content ol {
-  padding-left: 60px;
-  max-width: 70%;
+.divide:before {
+  content: '';
+  display: block;
+  background: black;
+  height: 1px;
+  width: 100%;
+  margin: 0 0 30px 0;
+  opacity: 0.1;
 }
 
-#main-content img {
-  margin-right: -6px;
-  min-width: 400px;
+#img-stack img:not(:last-child) {
+  margin-bottom: 2px;
 }
 
-#main-content .mult {
-  margin: 0 0 6px -6px;
-  min-width: 250px;
-  vertical-align: middle;
+#thirds img {
+  max-width: 33%;
 }
 
-.content {
-  padding-bottom: 30px;
-  max-width: 70%;
-}
-
-.t {
-  padding-top: 30px;
+#halfs img {
+  max-width: 49%;
 }
 
 .aop {
@@ -431,16 +484,12 @@ h2:after {
   width: 30%;
 }
 
-.caption {
-  margin: 10px 0 10px 1%;
-  font-size: 1.4rem;
-}
-
 /* Flashes */
 
 .logo-flash {
   position: absolute;
-  width: 64%;
+  max-width: 66%;
+  min-width: 600px;
   left: 30%;
   top: 2%;
   z-index: -1;
