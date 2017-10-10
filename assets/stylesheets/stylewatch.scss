@@ -195,9 +195,8 @@ nav a {
 }
 
 .nav {
-  position: absolute;
-  bottom: 9vh;
-  left: 7%;
+  margin-top: 4vh;
+  z-index: 1;
 }
 
 footer {
@@ -249,6 +248,7 @@ footer {
 
 #earth-p {
   height: 100vh; 
+  min-height: 800px;
   width: 100vw; 
   position: absolute; 
   z-index: -1; 
@@ -275,10 +275,8 @@ img {
 #guts-about {
   position: absolute;
   left: 7%;
-  top: 10vh;
-  width: 90%;
-  height: 90vh;
-  overflow: hidden;
+  top: 9vh;
+  overflow-x: hidden;
 
   h1, 
   h3 {
@@ -308,6 +306,12 @@ img {
     width: 80%;
     margin-top: 36px;
   }
+}
+
+#guts-flash {
+  height: 56vh;
+  width: 90vw;
+  min-height: 380px;
 }
 
 #guts {
