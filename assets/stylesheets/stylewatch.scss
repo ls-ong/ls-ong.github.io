@@ -488,6 +488,11 @@ h2:after {
   ==================
 */
 
+@media (max-width: 700px) {
+  .nav2 {
+    display: none;
+  }
+}
 
 @media (max-width: 900px) { 
 
@@ -542,12 +547,6 @@ h2:after {
   } 
 }
 
-@media (max-width: 700px) {
-  .nav2 {
-    display: none;
-  }
-}
-
 @media (max-width: 1100px) { 
 
   #about-box img {
@@ -562,7 +561,7 @@ h2:after {
   }
 }
 
-@media (max-width: 1300px) { 
+@media (min-width: 1200px) { 
 
   #guts-about {
     h1,
