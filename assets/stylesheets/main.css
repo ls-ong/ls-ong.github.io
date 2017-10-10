@@ -241,7 +241,8 @@ img {
 #guts-flash {
   height: 56vh;
   width: 90vw;
-  min-height: 380px; }
+  min-height: 380px;
+  min-width: 660px; }
 
 #guts {
   margin: 8vh 0 10vh 10vw; }
