@@ -371,15 +371,6 @@ h2:after {
   Media Queries
   ==================
 */
-@media (max-width: 1100px) {
-  #about-box img {
-    height: 62vh;
-    width: 76vw;
-    object-fit: cover; }
-
-  .intro-text {
-    width: 74vw;
-    margin-top: 30px; } }
 @media (max-width: 900px) {
   #guts-about h1,
   #guts-about h3 {
@@ -416,5 +407,23 @@ h2:after {
 @media (max-width: 700px) {
   .nav2 {
     display: none; } }
+@media (max-width: 1100px) {
+  #about-box img {
+    height: 62vh;
+    width: 76vw;
+    object-fit: cover; }
+
+  .intro-text {
+    width: 74vw;
+    margin-top: 30px; } }
+@media (max-width: 1300px) {
+  #guts-about h1,
+  #guts-about h3 {
+    font-size: 12rem;
+    word-spacing: -16px;
+    margin: 0 0 20px -4px; }
+  #guts-about h4,
+  #guts-about .f-caption {
+    font-size: 3.2rem; } }
 
 /*# sourceMappingURL=main.css.map */
