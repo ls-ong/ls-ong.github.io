@@ -416,7 +416,7 @@ h2:after {
   .intro-text {
     width: 74vw;
     margin-top: 30px; } }
-@media (min-width: 1200px) {
+@media (min-height: 900px) and (min-width: 1300px) {
   #guts-about h1,
   #guts-about h3 {
     font-size: 12rem;
@@ -424,6 +424,6 @@ h2:after {
     margin: 0 0 20px -4px; }
   #guts-about h4,
   #guts-about .f-caption {
-    font-size: 3.2rem; } }
+    font-size: 2.8rem; } }
 
 /*# sourceMappingURL=main.css.map */
