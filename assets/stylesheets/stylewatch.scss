@@ -201,8 +201,8 @@ nav a {
 
 footer {
   position: absolute;
-  bottom: 12vh;
-  right: 6vw;
+  bottom: 8vh;
+  right: 5vw;
   opacity: .18;
 
   h1 {
@@ -233,9 +233,9 @@ footer {
 
 .logo-flash {
   position: absolute;
-  max-width: 66%;
-  min-width: 600px;
-  left: 30%;
+  max-width: 64%;
+  min-width: 500px;
+  left: 32%;
   top: 2%;
   z-index: -1;
 }
@@ -284,7 +284,6 @@ img {
     font-size: 8rem;
     line-height: 104%;    
     word-spacing: -16px;
-    margin-left: -4px;
   }
 
   h4,
@@ -384,17 +383,13 @@ h2:after {
   width: 72%;
   min-width: 760px;
 
-  h1, h2 {
+  h1 {
     font-weight: 400;
     margin-bottom: 20px;
   }
 
   h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
   }
 
   p, 
@@ -403,7 +398,7 @@ h2:after {
     line-height: 130%;
   }
 
-  img {
+  img:not(.fly) {
     margin-bottom: 30px;
     max-width: 100%;
   }
@@ -457,21 +452,30 @@ h2:after {
 
 /* Flyers */
 
-.fly, 
-.fly-p-r {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 60px 0;
-}
-
 .fly {
-  background-color: rgba(0, 0, 0, 0);
-  width: 50%;
+  img {
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0);
+    width: 54%;
+    margin-left: 4%;
+  }
 }
 
-.fly-p-r {
-  margin-left: 40px;
+.fly:not(:last-child):after {
+  content: '';
+  display: block;
+  background: black;
+  height: 2px;
   width: 30%;
+  margin: 20px 0 50px 35%;
+
+}
+
+.fly-content {
+  display: inline-block;
+  margin-top: 100px;
+  width: 40%;
 }
 
 /* Photo World */
@@ -527,7 +531,6 @@ h2:after {
 
   #guts {
     h1 {
-      font-weight: 700;
       font-size: 4rem;
       line-height: 100%;
     }
@@ -545,11 +548,19 @@ h2:after {
     h1 {
       font-size: 2.2rem;
     }
-
-    h2 {
-      font-size: 2.2rem;
-    }
   } 
+
+  .fly {
+    img {
+      vertical-align: middle;
+    }
+    min-width: 545px;
+  }
+
+  .fly-content {
+    margin-top: 0;
+    vertical-align: middle;
+  }
 }
 
 @media (max-width: 1100px) { 
