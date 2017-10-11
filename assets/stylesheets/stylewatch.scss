@@ -286,19 +286,19 @@ img {
     word-spacing: -16px;
   }
 
+  h3 {
+    width: 50%;
+  }
+
   h4,
   .f-caption {
     font: 400 2.2rem "Work Sans", sans-serif;
     width: 96%;
-    line-height: 130%;
+    line-height: 136%;
   }
 
   .f-caption {
-    width: 50%;
-  }
-
-  h3 {
-    width: 70%;
+    width: 56%;
   }
 
   .subh {
@@ -398,7 +398,7 @@ h2:after {
     line-height: 130%;
   }
 
-  img:not(.fly) {
+  img {
     margin-bottom: 30px;
     max-width: 100%;
   }
@@ -555,6 +555,7 @@ h2:after {
       vertical-align: middle;
     }
     min-width: 545px;
+    max-width: 1300px;
   }
 
   .fly-content {

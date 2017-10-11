@@ -224,15 +224,15 @@ img {
     font-size: 8rem;
     line-height: 104%;
     word-spacing: -16px; }
+  #guts-about h3 {
+    width: 50%; }
   #guts-about h4,
   #guts-about .f-caption {
     font: 400 2.2rem "Work Sans", sans-serif;
     width: 96%;
-    line-height: 130%; }
+    line-height: 136%; }
   #guts-about .f-caption {
-    width: 50%; }
-  #guts-about h3 {
-    width: 70%; }
+    width: 56%; }
   #guts-about .subh {
     width: 80%;
     margin-top: 36px; }
@@ -306,7 +306,7 @@ h2:after {
   #main-content ol {
     margin-bottom: 30px;
     line-height: 130%; }
-  #main-content img:not(.fly) {
+  #main-content img {
     margin-bottom: 30px;
     max-width: 100%; }
   #main-content .caption {
@@ -413,7 +413,8 @@ h2:after {
       font-size: 2.2rem; }
 
   .fly {
-    min-width: 545px; }
+    min-width: 545px;
+    max-width: 1300px; }
     .fly img {
       vertical-align: middle; }
 
