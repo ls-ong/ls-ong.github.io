@@ -233,10 +233,10 @@ footer {
 
 .logo-flash {
   position: absolute;
-  max-width: 64%;
-  min-width: 500px;
-  left: 32%;
-  top: 2%;
+  max-width: 58%;
+  min-width: 600px;
+  left: 36%;
+  top: 12%;
   z-index: -1;
 }
 
@@ -273,9 +273,9 @@ img {
 }
 
 #guts-about {
-  position: absolute;
-  left: 7%;
-  top: 9vh;
+  width: 100vw;
+  height: 100vh;
+  padding: 9vh 0 0 7vw;
   overflow-x: hidden;
 
   h1, 
@@ -519,6 +519,10 @@ h2:after {
     .f-caption {
       font-size: 2.2rem;
     }
+
+    .f-caption {
+      width: 50%;
+    }
   }
 
   .bar {
@@ -602,7 +606,7 @@ h2:after {
     h3 {
       font-size: 9rem;
       word-spacing: -16px;
-      margin: 0 0 12px -4px;
+      margin-bottom: 20px;
     }
 
     h4,
@@ -619,7 +623,7 @@ h2:after {
     h3 {
       font-size: 12rem;
       word-spacing: -16px;
-      margin: 0 0 20px -4px;
+      margin-bottom: 20px;
     }
 
     h4,
@@ -627,4 +631,12 @@ h2:after {
       font-size: 2.8rem;
     }
   }
+}
+
+@media (min-width: 1600px) {
+
+    #intro-text {
+      font-size: 2.2rem;
+    }
+
 }

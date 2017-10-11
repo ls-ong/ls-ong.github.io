@@ -181,10 +181,10 @@ footer {
 /* Index Flashes */
 .logo-flash {
   position: absolute;
-  max-width: 64%;
-  min-width: 500px;
-  left: 32%;
-  top: 2%;
+  max-width: 58%;
+  min-width: 600px;
+  left: 36%;
+  top: 12%;
   z-index: -1; }
 
 .f-caption {
@@ -214,9 +214,9 @@ img {
   align-items: flex-start; }
 
 #guts-about {
-  position: absolute;
-  left: 7%;
-  top: 9vh;
+  width: 100vw;
+  height: 100vh;
+  padding: 9vh 0 0 7vw;
   overflow-x: hidden; }
   #guts-about h1,
   #guts-about h3 {
@@ -392,6 +392,8 @@ h2:after {
   #guts-about h4,
   #guts-about .f-caption {
     font-size: 2.2rem; }
+  #guts-about .f-caption {
+    width: 50%; }
 
   .bar {
     margin-right: 10px; }
@@ -444,7 +446,7 @@ h2:after {
   #guts-about h3 {
     font-size: 9rem;
     word-spacing: -16px;
-    margin: 0 0 12px -4px; }
+    margin-bottom: 20px; }
   #guts-about h4,
   #guts-about .f-caption {
     font-size: 2.2rem; } }
@@ -453,9 +455,12 @@ h2:after {
   #guts-about h3 {
     font-size: 12rem;
     word-spacing: -16px;
-    margin: 0 0 20px -4px; }
+    margin-bottom: 20px; }
   #guts-about h4,
   #guts-about .f-caption {
     font-size: 2.8rem; } }
+@media (min-width: 1600px) {
+  #intro-text {
+    font-size: 2.2rem; } }
 
 /*# sourceMappingURL=main.css.map */
