@@ -197,7 +197,6 @@ footer {
   width: 100vw;
   position: absolute;
   z-index: -1;
-  background-position: 0 -20px;
   background-image: url(images/blobs.jpg);
   overflow: hidden; }
 
@@ -214,10 +213,9 @@ img {
   align-items: flex-start; }
 
 #guts-about {
-  width: 100vw;
-  height: 100vh;
-  padding: 9vh 0 0 7vw;
-  overflow-x: hidden; }
+  width: 100%;
+  height: 100%;
+  padding: 9vh 0 0 7vw; }
   #guts-about h1,
   #guts-about h3 {
     font-weight: 700;
@@ -437,7 +435,7 @@ h2:after {
   #guts-about h3 {
     font-size: 12rem;
     word-spacing: -16px;
-    margin: 0 0 20px -4px; }
+    margin: 0 0 30px 0; }
   #guts-about h4,
   #guts-about .f-caption {
     font-size: 2.8rem; } }
