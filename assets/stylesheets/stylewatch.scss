@@ -247,13 +247,11 @@ footer {
 /* Flash Pic*/
 
 #earth-p {
-  height: 100vh; 
-  min-height: 800px;
-  width: 100vw; 
-  position: absolute; 
+  height: 100%; 
+  width: 100%;
+  position: absolute;
   z-index: -1; 
   background-image: url(images/blobs.jpg);
-  overflow: hidden;
 }
 
 /* Grid */
