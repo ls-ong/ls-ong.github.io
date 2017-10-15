@@ -22,11 +22,11 @@
 
   	<div class="nav2">
     	<h1><a href="index.html" id="lian-home-button" target="_self">&#8592;</a></h1>
-	</div>
+	 </div>
 
   	<div id="guts">
 
-  		<h1>Rainforest QA</h1>
+  		<h3>Rainforest QA</h3>
   		<h4>Product Design Intern<br>Summer 2017</h4>
 
   		<div id="main-content">
@@ -58,15 +58,11 @@
 
   		</ol>
 
-  		<p>All in all, a complex set of considerations for a fundamental user task, and something I worked throughout the summer to make more managable.</p>
-
-  		<h1>The Problem</h1>
-
-  		<p><strong>Users reported numerous frustrations in managing the complexity of settings across Rainforest, especially when trying to specify and manage variables (e.g. when running a test).</strong> During my time at Rainforest, I focused specifically on the Settings pages, where users were able to configure the Rainforest platform and tests exactly to their company's needs.</p>
+      <p><strong>Users reported numerous frustrations in managing the complexity of settings across Rainforest, especially when trying to specify and manage variables (e.g. when running a test).</strong> During my time at Rainforest, I focused specifically on the Settings pages, where users were able to configure the Rainforest platform and tests exactly to their company's needs.</p>
 
   		<h1>Understanding Rainforest &amp; its Users</h1>
 
-  		<p>My first step was to map and understand the ins and outs of the Rainforest platform, as well as the users who used it &mdash; this was my first encounter with the quality assurance space, so I spent my first couple weeks learning everything I could about quality assurance and the Rainforest platform.</p>
+  		<p>My first step was to map and understand the ins and outs of the Rainforest platform, as well as the users who used it &mdash; this was my first encounter with the quality assurance space, so I spent my first couple weeks learning everything I could about quality assurance and the Rainforest platform.<br><br>
 
       <!--
 
@@ -74,14 +70,13 @@
   		<p class="caption">Modeling user flows across Rainforest</p>
 
       -->
-      
-  		<p>I also spoke to PMs and Customer Success Managers, seeking to learn more about the personas that engaged with the platform. Ultimately, my projects focused on one persona in particular: the "Individual Contributer", a user who managed and administered the Rainforest platform as a part of their job.<br><br>
+      I also spoke to PMs and Customer Success Managers, seeking to learn more about the personas that engaged with the platform. Ultimately, my projects focused on one persona in particular: the "Individual Contributer", a user who managed and administered the Rainforest platform as a part of their job.<br><br>
 
       In an enterprise setting, I found that user research was much less direct. This was very new for me &mdash; previously, most of my user research centered around more immediate and universal design issues, where I could easily interview the people around me. Now, I found myself watching customer calls conducted by CSMs, and speaking to PMs in order to gain insights on user behavior.</p>
 
-  		<h2 class="divide">Sites &amp; Environments</h2>
+  		<h2 class="divide">Project 1: Sites &amp; Environments</h2>
 
-      <p>My first main project was to redesign the Sites &amp; Environments section of the Settings pages, where users were able to specify the sites (websites) and environments (staging environments) that their tests would be run against. In terms of functionality, users would be able to add environments, each of which would have a list of corresponding user-defined sites (either a webpage or a mobile app download). Additionally, users would be able to set defaults on this page, which would be reflected when running a test.</p>
+      <p>My first main project was to redesign the Sites &amp; Environments section of the Settings pages, where users were able to specify the sites (websites) and environments (staging environments) that their tests would be run against. Users would be able to add environments, each of which would have a list of corresponding user-defined sites (either a webpage or a mobile app download). Additionally, users would be able to set defaults, which would be reflected when running a test.</p>
       
       <div class="mult-img">
         <img src="assets/stylesheets/images/rfqa/se_og.png" style="width: 46.2%;" alt="original static">
@@ -90,21 +85,21 @@
 
       <p class="caption">The previous tabular design for Sites &amp; Environments (1) &mdash; confusing at scale (2)</p>
 
-      <p>Obviously, the previous design for Sites &amp; Environments did not scale well at all. Based on user feedback for the existing platform, I collated a list of user needs and constraints that a new design would have to address:</p>
+      <p>Based on user feedback for the existing platform, I collated a list of user needs and constraints that a new design would have to address:</p>
 
       <ol>
-        <li><strong>The current Sites and Environments page was not particularly conducive to managing and surfacing relevant sites, especially at scale</strong> — many site entries are left blank and unused, and there was no dynamic method of hiding these sites. As such, there was no easy way to identify and index to a particular site entry short of scrolling through the table.</li>
-        <li>There was no way to add multiple app download links under one site entry; If a user needed multiple apps to be downloaded in the same environment, they had to use the | symbol to seperate multiple apps.</li>
-        <li>The mobile category was below web, making it frustrating to reach and manage for users who prioritized mobile over web.</li>
-        <li>Lack of visual hierarchy on the original design, as well as visual clutter (e.g. the edit and delete buttons, which were presented beside every Environment and Site entry).</li>
+        <li><strong>The current Sites and Environments page was not particularly conducive to managing relevant sites, especially at scale</strong> — many site entries were left blank, and there was no dynamic method of hiding these unused sites. As such, there was no easy way to surface a particular site entry.</li>
+        <li>There was no way to add multiple app download links under one site entry; If a user needed multiple apps to be downloaded in the same environment, they had to use the | symbol to seperate them.</li>
+        <li>The mobile category was below web, making it frustrating to reach and manage for users who prioritized mobile sites over web.</li>
+        <li>Lack of visual hierarchy in the original design, as well as visual clutter (e.g. the edit and delete buttons, which were presented beside every Environment and Site entry).</li>
       </ol>
 
       <h1>Diverging Ideation</h1>
 
       <p>Based on these needs, I hit the ground running with ideation &mdash; I was able to build out some potential screens and flows.</p>
-
+      
       <img src="assets/stylesheets/images/rfqa/se_ideation.png" alt="sketch file">
-
+      
       <p class="caption">Ideation for Sites &amp; Environments</p>
 
       <div class="mult-img">
@@ -114,9 +109,11 @@
 
       <p class="caption">Ideation continued &mdash; defining user flows (1) thinking about how to style defaults (2)</p>
 
-      <h1>Converging Ideation &amp; Validation</h1>
+      <p>In particular, I was focued on the task of finding a particular site, and how I could make that process as seamless as possible.</p>
 
-      <p>At this point, I began to focus in on a final design. After validating my designs with the product team, I was able to produce hi-fi mocks that brought my ideation together.</p>
+      <h1>Converging Ideation &amp; Testing</h1>
+
+      <p>At this point, I was able to focus in on a final design and produce hi-fi mocks. I validated my design decisions with the product and customer success teams, and was able to run some basic usability tests with them. Unfortunately, I was not able to directly user test my designs as I would have liked &mdash; as mentioned previously, user testing was hard to accomplish given the constraints</p>
 
       <img src="assets/stylesheets/images/rfqa/se_2.png" alt="hi-fi 2">
 
@@ -133,7 +130,7 @@
 
       <h1>Final Prototype &amp; Implementation</h1>
 
-      <p>The fully fleshed out Invision prototype can be seen <a href="https://invis.io/BKCSH2T3F#/245951197_web_Sites_Start">here</a>.
+      <p>The completed Invision prototype can be seen <a href="https://invis.io/BKCSH2T3F#/245951197_web_Sites_Start">here</a>.
 
       <br><br>
 
@@ -142,7 +139,7 @@
       <img src="assets/stylesheets/images/rfqa/se_live.gif" alt="live gif">
       <p class="caption">The new design for Sites &amp; Environments! It's live.</p>
 
-      <h2 class="divide">Platform Versioning</h2>
+      <h2 class="divide">Project 2: Platform Versioning</h2>
 
       <p>My second main project was Platform Versioning &mdash; rethinking the way that users interact with the platforms and browsers that their tests are run on. For instance, if a user wants to run a test on Android Mobile Web and Chrome, they have to know and consider the type of Android Phone, the Android OS version, the OS Chrome would be run on, the version of that OS, and so on.</p>
 

@@ -5,8 +5,6 @@ $(document).ready(function() {
 	var ogcolor = $("body").css("background-color");
 	var old = $("#guts-flash").html();
 
-	/* PRODUCT */
-
 	var id = ["#hexa", "#rainf", "#dive", "#act", "#bi", "#flyers"]
 	var color = ["#ffe9da", "#eefcee", "#fff1f1", "#f1f7ff", "#ffedd6", "#eee"]
 
@@ -30,6 +28,19 @@ $(document).ready(function() {
 		colorChange(id[i], color[i]);
 	}
 
+	$("#world").hover(function(){
+		var nowearth = $("#world-new").html();
+	    $("#guts-flash").animate({opacity: 0}, 0, function () {
+	        $("#guts-flash").stop().html(nowearth).animate({opacity: 1});
+	    $("#earth-p").stop().fadeIn(200);
+	    });
+	}, function () {
+	    $("#guts-flash").animate({opacity: 0}, 0, function () {
+	        $("#guts-flash").stop().html(old).animate({opacity: 1});
+	    $("#earth-p").stop().fadeOut(200);
+	    });
+	});
+
 	/* click */
 
 	var buttons = [".hvr-backward", "#lian-home-button", "#about-button"]
@@ -48,21 +59,4 @@ $(document).ready(function() {
 	for (i = 0; i < buttons.length; i++) {
 		fade(buttons[i]);
 	}
-
-	/* pics */
-
-
-	$("#world").hover(function(){
-		var nowearth = $("#world-new").html();
-	    $("#guts-flash").animate({opacity: 0}, 0, function () {
-	        $("#guts-flash").stop().html(nowearth).animate({opacity: 1});
-	    $("#earth-p").stop().fadeIn(100);
-	    });
-	}, function () {
-	    $("#guts-flash").animate({opacity: 0}, 0, function () {
-	        $("#guts-flash").stop().html(old).animate({opacity: 1});
-	    $("#earth-p").stop().fadeOut(100);
-	    });
-	});
 });
-

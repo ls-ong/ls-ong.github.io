@@ -248,7 +248,7 @@ footer {
 
 #earth-p {
   height: 100%; 
-  width: 100%;
+  width: 100vw;
   position: absolute;
   z-index: -1; 
   background-image: url(images/blobs.jpg);
@@ -313,7 +313,7 @@ img {
 #guts {
   margin: 8vh 0 10vh 10vw;
 
-  h1 {
+  h3 {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 100%;
@@ -321,7 +321,7 @@ img {
 
   h4 {
     font: 400 2rem "Work Sans", sans-serif;
-    margin: 4px 0 42px 0;
+    margin: 4px 0 48px 0;
   }
 }
 
@@ -380,12 +380,13 @@ h2:after {
   min-width: 760px;
 
   h1 {
-    font-weight: 400;
     margin-bottom: 20px;
+    font-size: 2.2rem;
   }
 
-  h1 {
-    font-size: 2.6rem;
+  h2 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
   }
 
   p, 
@@ -530,32 +531,23 @@ h2:after {
   }
 
   #guts {
-    h1 {
-      font-size: 4rem;
-      line-height: 100%;
-    }
-
-    h4 {
-      font: 400 2.2rem "Work Sans", sans-serif;
-      margin: 4px 0 42px 0;
+    h3 {
+      font-size: 4.6rem;
     }
   }
 
   #main-content {
     width: 90%;
     min-width: 0;
-
-    h1 {
-      font-size: 2.2rem;
-    }
   } 
 
   .fly {
+    min-width: 545px;
+    max-width: 1300px;
+    
     img {
       vertical-align: middle;
     }
-    min-width: 545px;
-    max-width: 1300px;
   }
 
   .fly-content {
