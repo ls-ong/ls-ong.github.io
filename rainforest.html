@@ -87,74 +87,9 @@
 
       In an enterprise setting, I found that user research was much less direct. This was very new for me &mdash; previously, most of my user research centered around more immediate and universal design issues, where I could easily interview the people around me. Now, I found myself watching customer calls conducted by CSMs, and speaking to PMs in order to gain insights on user behavior.</p>
 
-  		<h2 class="divide">Project 1: Sites &amp; Environments</h2>
+      <h2 class="divide">Project 1: Platform Versioning</h2>
 
-      <p>My first main project was to redesign the Sites &amp; Environments section of the Settings pages, where users were able to specify the sites (websites) and environments (staging environments) that their tests would be run against. Users would be able to add environments, each of which would have a list of corresponding user-defined sites (either a webpage or a mobile app download). Additionally, users would be able to set defaults, which would be reflected when running a test.</p>
-      
-      <div class="mult-img">
-        <img src="assets/stylesheets/images/rfqa/se_og.png" style="width: 46.2%;" alt="original static">
-        <img src="assets/stylesheets/images/rfqa/se_existing.gif" style="width: 53.2%;" alt="original moving">
-      </div>
-
-      <p class="caption">The previous tabular design for Sites &amp; Environments (1) &mdash; confusing at scale (2)</p>
-
-      <p>Based on user feedback for the existing platform, I collated a list of user needs and constraints that a new design would have to address:</p>
-
-      <ol>
-        <li><strong>The current Sites and Environments page was not particularly conducive to managing relevant sites, especially at scale</strong> — many site entries were left blank, and there was no dynamic method of hiding these unused sites. As such, there was no easy way to surface a particular site entry.</li>
-        <li>There was no way to add multiple app download links under one site entry; If a user needed multiple apps to be downloaded in the same environment, they had to use the | symbol to seperate them.</li>
-        <li>The mobile category was below web, making it frustrating to reach and manage for users who prioritized mobile sites over web.</li>
-        <li>Lack of visual hierarchy in the original design, as well as visual clutter (e.g. the edit and delete buttons, which were presented beside every Environment and Site entry).</li>
-      </ol>
-
-      <h1>Diverging Ideation</h1>
-
-      <p>Based on these needs, I hit the ground running with ideation &mdash; I was able to build out some potential screens and flows.</p>
-      
-      <img src="assets/stylesheets/images/rfqa/se_ideation.png" alt="sketch file">
-      
-      <p class="caption">Ideation for Sites &amp; Environments</p>
-
-      <div class="mult-img">
-        <img src="assets/stylesheets/images/rfqa/se_editing flow.png" style="width: 55.6%;" alt="sketch file">
-        <img src="assets/stylesheets/images/rfqa/se_default.png" style="width: 43.4%;" alt="default design">
-      </div>
-
-      <p class="caption">Ideation continued &mdash; defining user flows (1) thinking about how to style defaults (2)</p>
-
-      <p>In particular, I was focued on the task of finding a particular site, and how I could make that process as seamless as possible.</p>
-
-      <h1>Converging Ideation &amp; Testing</h1>
-
-      <p>At this point, I was able to focus in on a final design and produce hi-fi mocks. I validated my design decisions with the product and customer success teams, and was able to run some basic usability tests with them. Unfortunately, I was not able to directly user test my designs as I would have liked &mdash; as mentioned previously, user testing was hard to accomplish given the constraints</p>
-
-      <img src="assets/stylesheets/images/rfqa/se_2.png" alt="hi-fi 2">
-
-      <p class="caption">A finalized screen, editing mobile Sites.</p>
-
-      <p>The final design included:</p>
-
-      <ol>
-        <li>A collapsable implementation at the Environment level, replacing the table.</li>
-        <li>A UI refresh and visual hierarchy based on the Rainforest 2.0 design language.</li>
-        <li>Updated system for adding new Sites and Environments, as well as setting defaults.</li>
-        <li>Improved management for mobile devices and Sites, including the ability to add multiple mobile applications in one site.</li>
-      </ol>
-
-      <h1>Final Prototype &amp; Implementation</h1>
-
-      <p>The completed Invision prototype can be seen <a href="https://invis.io/BKCSH2T3F#/245951197_web_Sites_Start">here</a>.
-
-      <br><br>
-
-      After writing a product narrative document detailing my design, the last step was to hand the prototype off to engineers through Invision and Zeplin. I had valuable opportunities to work with the engineers on how the final design would be implemented and shipped, walking through potential limitations with the back end.</p>
-
-      <img src="assets/stylesheets/images/rfqa/se_live.gif" alt="live gif">
-      <p class="caption">The new design for Sites &amp; Environments! It's live.</p>
-
-      <h2 class="divide">Project 2: Platform Versioning</h2>
-
-      <p>My second main project was Platform Versioning &mdash; rethinking the way that users interact with the platforms and browsers that their tests are run on. For instance, if a user wants to run a test on Android Mobile Web and Chrome, they have to know and consider the type of Android Phone, the Android OS version, the OS Chrome would be run on, the version of that OS, and so on.</p>
+      <p>My first main project was Platform Versioning &mdash; rethinking the way that users interact with the platforms and browsers that their tests are run on. For instance, if a user wants to run a test on Android Mobile Web and Chrome, they have to know and consider the type of Android Phone, the Android OS version, the OS Chrome would be run on, the version of that OS, and so on.</p>
 
       <h1>Existing Design &amp; Problem</h1>
 
@@ -234,6 +169,71 @@
       <br><br>
 
       Currently, the new design is still in development &mdash; there are many considerations for such a wide reaching redesign. Hopefully it'll be shipped soon!</p>
+
+      <h2 class="divide">Project 2: Sites &amp; Environments</h2>
+
+      <p>My second main project was to redesign the Sites &amp; Environments section of the Settings pages, where users were able to specify the sites (websites) and environments (staging environments) that their tests would be run against. Users would be able to add environments, each of which would have a list of corresponding user-defined sites (either a webpage or a mobile app download). Additionally, users would be able to set defaults, which would be reflected when running a test.</p>
+      
+      <div class="mult-img">
+        <img src="assets/stylesheets/images/rfqa/se_og.png" style="width: 46.2%;" alt="original static">
+        <img src="assets/stylesheets/images/rfqa/se_existing.gif" style="width: 53.2%;" alt="original moving">
+      </div>
+
+      <p class="caption">The previous tabular design for Sites &amp; Environments (1) &mdash; confusing at scale (2)</p>
+
+      <p>Based on user feedback for the existing platform, I collated a list of user needs and constraints that a new design would have to address:</p>
+
+      <ol>
+        <li><strong>The current Sites and Environments page was not particularly conducive to managing relevant sites, especially at scale</strong> — many site entries were left blank, and there was no dynamic method of hiding these unused sites. As such, there was no easy way to surface a particular site entry.</li>
+        <li>There was no way to add multiple app download links under one site entry; If a user needed multiple apps to be downloaded in the same environment, they had to use the | symbol to seperate them.</li>
+        <li>The mobile category was below web, making it frustrating to reach and manage for users who prioritized mobile sites over web.</li>
+        <li>Lack of visual hierarchy in the original design, as well as visual clutter (e.g. the edit and delete buttons, which were presented beside every Environment and Site entry).</li>
+      </ol>
+
+      <h1>Diverging Ideation</h1>
+
+      <p>Based on these needs, I hit the ground running with ideation &mdash; I was able to build out some potential screens and flows.</p>
+      
+      <img src="assets/stylesheets/images/rfqa/se_ideation.png" alt="sketch file">
+      
+      <p class="caption">Ideation for Sites &amp; Environments</p>
+
+      <div class="mult-img">
+        <img src="assets/stylesheets/images/rfqa/se_editing flow.png" style="width: 55.6%;" alt="sketch file">
+        <img src="assets/stylesheets/images/rfqa/se_default.png" style="width: 43.4%;" alt="default design">
+      </div>
+
+      <p class="caption">Ideation continued &mdash; defining user flows (1) thinking about how to style defaults (2)</p>
+
+      <p>In particular, I was focued on the task of finding a particular site, and how I could make that process as seamless as possible.</p>
+
+      <h1>Converging Ideation &amp; Testing</h1>
+
+      <p>At this point, I was able to focus in on a final design and produce hi-fi mocks. I validated my design decisions with the product and customer success teams, and was able to run some basic usability tests with them. Unfortunately, I was not able to directly user test my designs as I would have liked &mdash; as mentioned previously, user testing was hard to accomplish given the constraints</p>
+
+      <img src="assets/stylesheets/images/rfqa/se_2.png" alt="hi-fi 2">
+
+      <p class="caption">A finalized screen, editing mobile Sites.</p>
+
+      <p>The final design included:</p>
+
+      <ol>
+        <li>A collapsable implementation at the Environment level, replacing the table.</li>
+        <li>A UI refresh and visual hierarchy based on the Rainforest 2.0 design language.</li>
+        <li>Updated system for adding new Sites and Environments, as well as setting defaults.</li>
+        <li>Improved management for mobile devices and Sites, including the ability to add multiple mobile applications in one site.</li>
+      </ol>
+
+      <h1>Final Prototype &amp; Implementation</h1>
+
+      <p>The completed Invision prototype can be seen <a href="https://invis.io/BKCSH2T3F#/245951197_web_Sites_Start">here</a>.
+
+      <br><br>
+
+      After writing a product narrative document detailing my design, the last step was to hand the prototype off to engineers through Invision and Zeplin. I had valuable opportunities to work with the engineers on how the final design would be implemented and shipped, walking through potential limitations with the back end.</p>
+
+      <img src="assets/stylesheets/images/rfqa/se_live.gif" alt="live gif">
+      <p class="caption">The new design for Sites &amp; Environments! It's live.</p>
 
       <h1 class="divide">Conclusion + Reflections</h1>
 
