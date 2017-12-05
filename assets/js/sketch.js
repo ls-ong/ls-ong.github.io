@@ -1,14 +1,14 @@
 var cols, rows;
-var scl = 16;
-var w = 1800;
-var h = 1200;
+var scl = 22;
+var w = 1300;
+var h = 1000;
 
 var flying = 0;
 var terrain = [];
 
 function setup() {
-  createCanvas(1800, 1800, WEBGL);
-  cols = w /scl;
+  createCanvas(1500, 1500, WEBGL);
+  cols = w/scl;
   rows = h/scl;
 
   for (var x = 0; x < cols; x++) {

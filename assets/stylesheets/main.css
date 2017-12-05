@@ -5,8 +5,8 @@
   src: url("apercu/apercu-mono-webfont.eot?#iefix") format("embedded-opentype"), url("apercu/apercu-mono-webfont.woff") format("woff"), url("apercu/apercu-mono-webfont.ttf") format("truetype"), url("apercu/apercu-mono-webfont.svg#webfont") format("svg"); }
 @font-face {
   font-family: 'Plex';
-  src: url("Plex/IBMPlexSans-Regular.eot");
-  src: url("Plex/IBMPlexSans-Regular.woff") format("woff"), url("Plex/IBMPlexSans-Regular.woff2") format("woff2"); }
+  src: url("plex/IBMPlexSans-Regular.eot");
+  src: url("plex/IBMPlexSans-Regular.woff") format("woff"), url("plex/IBMPlexSans-Regular.woff2") format("woff2"); }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -94,6 +94,7 @@ em {
   font-style: italic; }
 
 h5 {
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 16px; }
 
@@ -117,6 +118,10 @@ a:hover {
 #index * {
   color: white; }
 
+#index .bar2 a:hover,
+#index .subh a:hover {
+  color: #ff25e5; }
+
 /* Hover Movement */
 .hvr-backward,
 #arrow,
@@ -128,13 +133,13 @@ a:hover {
   -webkit-transition: transform 0.2s ease;
   transition: transform 0.2s ease; }
 
+#about-button:hover ~ #arrow {
+  color: #ff25e5; }
+
 .hvr-backward:hover,
 #about-button:hover ~ #arrow {
   -webkit-transform: translateX(6px);
   transform: translateX(6px); }
-
-#about-button:hover ~ #arrow {
-  color: #4747ff; }
 
 .nav2:hover {
   -webkit-transform: translateX(-4px);
@@ -144,13 +149,10 @@ a:hover {
 .bar {
   display: inline-block;
   vertical-align: top;
-  margin-right: 40px; }
+  margin-right: 48px; }
 
 .bar2 {
   margin: 0 0 0 6vw; }
-
-.bar a:hover {
-  color: black; }
 
 .bar2 a:hover {
   color: #4747ff; }
@@ -239,7 +241,7 @@ img {
     width: 56%; }
   #guts-about .subh {
     width: 80%;
-    margin-top: 24px; }
+    margin-top: 20px; }
 
 #guts-flash {
   height: 56vh;

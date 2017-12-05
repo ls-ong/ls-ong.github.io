@@ -8,18 +8,20 @@ $(document).ready(function() {
 	var id = ["#hexa", "#rainf", "#dive", "#act", "#bi", "#flyers"]
 	var color = ["#ffe9da", "#eefcee", "#fff1f1", "#f1f7ff", "#ffedd6", "#eee"]
 
+	var newcolor = ["#ffd874", "#2ed656", "#f87ad5", "#63c7ff", "#ff8b66", "#704c4c"]
+
 	var colorChange = function(id, color) {
 		$(id).hover(
 			function(){
 				var now = $(id + "-new").html();
 			    $("#guts-flash").animate({opacity: 0}, 0, function () {
 			        $("#guts-flash").stop().html(now).animate({opacity: 1});
-			    $("body").stop().animate({backgroundColor: color}, 200);
+			    $("body").stop().animate({backgroundColor: color}, 500);
 		    });
 		}, function () {
 			$("#guts-flash").animate({opacity: 0}, 0,  function () {
 		        $("#guts-flash").stop().html(old).animate({opacity: 1});
-		    $("body").stop().animate({backgroundColor: ogcolor}, 200);
+		    $("body").stop().animate({backgroundColor: ogcolor}, 500);
 		    });
 		});
 	}
@@ -37,7 +39,7 @@ $(document).ready(function() {
 	// }
 
 	for (i = 0; i < id.length; i++) {
-		colorChange(id[i], color[i]);
+		colorChange(id[i], newcolor[i]);
 		// textChange(id[i]);
 	}
 
@@ -45,12 +47,12 @@ $(document).ready(function() {
 		var nowearth = $("#world-new").html();
 	    $("#guts-flash").animate({opacity: 0}, 0, function () {
 	        $("#guts-flash").stop().html(nowearth).animate({opacity: 1});
-	    $("#earth-p").stop().fadeIn(200);
+	    $("#earth-p").stop().fadeIn(500);
 	    });
 	}, function () {
 	    $("#guts-flash").animate({opacity: 0}, 0, function () {
 	        $("#guts-flash").stop().html(old).animate({opacity: 1});
-	    $("#earth-p").stop().fadeOut(200);
+	    $("#earth-p").stop().fadeOut(500);
 	    });
 	});
 
