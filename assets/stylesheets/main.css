@@ -114,6 +114,9 @@ a:visited {
 a:hover {
   color: #4747ff; }
 
+#index * {
+  color: white; }
+
 /* Hover Movement */
 .hvr-backward,
 #arrow,
@@ -156,7 +159,7 @@ nav a {
   text-decoration: none; }
 
 .nav {
-  margin-top: 4vh;
+  margin-top: 8vh;
   z-index: 1; }
 
 footer {
@@ -219,7 +222,7 @@ img {
   #guts-about h1,
   #guts-about h3 {
     font-weight: 700;
-    font-size: 8rem;
+    font-size: 9rem;
     line-height: 104%;
     word-spacing: -16px; }
   #guts-about h3 {

@@ -147,6 +147,10 @@ a:hover {
   color: #4747ff;
 }
 
+#index * {
+  color: white;
+}
+
 /* Hover Movement */
 
 .hvr-backward,
@@ -200,7 +204,7 @@ nav a {
 }
 
 .nav {
-  margin-top: 4vh;
+  margin-top: 8vh;
   z-index: 1;
 }
 
@@ -282,7 +286,7 @@ img {
   h1, 
   h3 {
     font-weight: 700;
-    font-size: 8rem;
+    font-size: 9rem;
     line-height: 104%;    
     word-spacing: -16px;
   }

@@ -9,12 +9,12 @@ $(document).ready(function() {
 	var color = ["#ffe9da", "#eefcee", "#fff1f1", "#f1f7ff", "#ffedd6", "#eee"]
 
 	var colorChange = function(id, color) {
-
-		$(id).hover(function(){
-			var now = $(id + "-new").html();
-		    $("#guts-flash").animate({opacity: 0}, 0, function () {
-		        $("#guts-flash").stop().html(now).animate({opacity: 1});
-		    $("body").stop().animate({backgroundColor: color}, 200);
+		$(id).hover(
+			function(){
+				var now = $(id + "-new").html();
+			    $("#guts-flash").animate({opacity: 0}, 0, function () {
+			        $("#guts-flash").stop().html(now).animate({opacity: 1});
+			    $("body").stop().animate({backgroundColor: color}, 200);
 		    });
 		}, function () {
 			$("#guts-flash").animate({opacity: 0}, 0,  function () {
@@ -24,8 +24,21 @@ $(document).ready(function() {
 		});
 	}
 
+	// var textChange = function(id) {
+	// 	$(id).hover(function(){
+	// 	    $("#index *").animate({
+	// 	    	"color": "black"
+	// 	    }, 200).stop();
+	//     }, function(){
+	//     	$("#index *").animate({
+	// 	    	"color": "white"
+	// 	    }, 200);
+	// 	});
+	// }
+
 	for (i = 0; i < id.length; i++) {
 		colorChange(id[i], color[i]);
+		// textChange(id[i]);
 	}
 
 	$("#world").hover(function(){
@@ -40,6 +53,7 @@ $(document).ready(function() {
 	    $("#earth-p").stop().fadeOut(200);
 	    });
 	});
+
 
 	/* click */
 
