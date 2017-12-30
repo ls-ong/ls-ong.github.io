@@ -4,7 +4,6 @@
   <head>
 
     <meta charset="utf-8">
-    <base href="." target="_blank">
     <meta name="description" content="Lian Song is a product designer, currently studying Cognitive Science and Human Centered Design at UC Berkeley.">
 
     <title>Rainforest &mdash; Lian Song</title>
@@ -31,16 +30,35 @@
 
   	<div class="nav2">
     	<h1><a href="index.html" id="lian-home-button" target="_self">&#8592;</a></h1>
-	 </div>
+	  </div>
+
+    <div class="other-nav">
+      <h2>See More</h2>
+      <ul>
+        <li><a href="hexa.html">Hexa Tea</a></li>
+        <li><a href="actransit.html">AC Transit</a></li>
+        <li><a href="bimarketing.html">BI Marketing</a></li>
+      </ul>
+    </div>
 
   	<div id="guts">
 
-  		<h3>Rainforest QA</h3>
-  		<h4>Product Design Intern<br>Summer 2017</h4>
+      <div id="info">
+
+    		<h2>Rainforest QA</h2>
+    		<p>Product Design Intern<br><em>Summer 2017</em></p>
+
+        <ul class="toc">
+          <li><a href="rainforest.html#introduction">Introduction</a></li>
+          <li><a href="rainforest.html#sites">Sites &amp; Environments</a></li>
+          <li><a href="rainforest.html#platforms">Platform Versioning</a></li>
+        </ul>
+
+      </div>
 
   		<div id="main-content">
 
-  		<h1>Intoduction</h1>
+  		<h2 id="introduction">Introduction</h2>
 
   		<p>During the summer of 2017, I served as a Product Design Intern at Rainforest QA, a startup in San Francisco aiming to automate the quality assurance process through a combination of crowdsouring and machine learning. <strong>Over the course of 11 weeks, I redesigned several key interactions, assisted in implementing a new design language, and helped define scalable design processes at Rainforest.</strong>
 
@@ -54,7 +72,7 @@
 
   		<p>As a startup, the team at Rainforest was small, and the product team even smaller &mdash; in fact, the design team consisted primarily of my manager and me. I also collaborated with PMs, Customer Success Managers, and engineers throughout my time at Rainforest.</p>
 
-  		<h1>Defining the Problem Space</h1>
+  		<h2>Defining the Problem Space</h2>
 
   		<p>When I joined as an intern, the product team was in the middle of creating and deploying Rainforest 2.0: a comprehensive rethinking of functionality and user flows across the Rainforest platform, paired with a new UI design language. Throughout my internship, I worked on applying this new design language throughout the platform, reconsidering interactions on Rainforest 2.0 according to user needs.</p>
 
@@ -73,7 +91,7 @@
 
       <p><strong>Users reported numerous frustrations in managing the complexity of settings across Rainforest, especially when trying to specify and manage variables (e.g. when running a test).</strong> During my time at Rainforest, I focused specifically on the Settings pages, where users were able to configure the Rainforest platform and tests exactly to their company's needs.</p>
 
-  		<h1>Understanding Rainforest &amp; its Users</h1>
+  		<h2>Understanding Rainforest &amp; its Users</h2>
 
   		<p>My first step was to map and understand the ins and outs of the Rainforest platform, as well as the users who used it &mdash; this was my first encounter with the quality assurance space, so I spent my first couple weeks learning everything I could about quality assurance and the Rainforest platform.<br><br>
 
@@ -87,11 +105,11 @@
 
       In an enterprise setting, I found that user research was much less direct. This was very new for me &mdash; previously, most of my user research centered around more immediate and universal design issues, where I could easily interview the people around me. Now, I found myself watching customer calls conducted by CSMs, and speaking to PMs in order to gain insights on user behavior.</p>
 
-      <h2 class="divide">Project 1: Platform Versioning</h2>
+      <h2 class="divide" id="platforms"><em>Project 1 &mdash;&mdash;</em><br>Platform Versioning</h2>
 
       <p>My first main project was Platform Versioning &mdash; rethinking the way that users interact with the platforms and browsers that their tests are run on. For instance, if a user wants to run a test on Android Mobile Web and Chrome, they have to know and consider the type of Android Phone, the Android OS version, the OS Chrome would be run on, the version of that OS, and so on.</p>
 
-      <h1>Existing Design &amp; Problem</h1>
+      <h2>Existing Design &amp; Problem</h2>
 
       <p>Platform Versioning appears in two primary areas of the Rainforest platform &mdash; when running a test, and when setting defaults when running said tests.
 
@@ -101,8 +119,12 @@
 
       <div class="mult-img">
 
-        <img src="assets/stylesheets/images/rfqa/bv_existing.png" style="width: 69.8%;" alt="versioning defaults">
-        <img src="assets/stylesheets/images/rfqa/bv_old.png" style="width: 29.6%;" alt="versioning test">
+        <div style="flex: 1.220607">
+          <img src="assets/stylesheets/images/rfqa/bv_existing.png" alt="versioning defaults">
+        </div>
+        <div style="flex: 0.519288">
+          <img src="assets/stylesheets/images/rfqa/bv_old.png" alt="versioning test">
+        </div>
 
       </div>
 
@@ -116,7 +138,7 @@
         <li>An increase in the number of versions that needed to be supported in the near future, which required a more robust and scalable design to accommodate.</li>
       </ol>
 
-      <h1>Ideation</h1>
+      <h2>Ideation</h2>
 
       <p><strong>With this new design, I was focused on intentionality.</strong> The previous design was a sort of free for all &mdash; the platform icons all existed on the same level, and there was no particular organization in their presentation. As such, it was hard to discern exactly more complex information that differentiating platforms (e.g. OS or browser version). 
 
@@ -134,7 +156,7 @@
 
       <p>One interaction that I was particularly focused on was the way that a browser's previous versions should be presented &mdash; whether they should always be visible, or whether they should be surfaced after a user selects the browser. This question would inform the next step: testing.</p>
 
-      <h1>Testing</h1>
+      <h2>Testing</h2>
 
       <p>I was able to test the product with a 2 CSMs and PMs who were familiar with user behavior on the platform, as well as a couple of interns. The goal was to validate the mental model that I had based my ideation on, and to learn more about how exactly a user would approach version selection.</p>
 
@@ -148,15 +170,15 @@
 
       Another piece of feedback that I received was that it was often hard to keep track of the browsers selected across different OSes and devices &mdash; for instance, selecting mobile and web browsers. This prompted me to rethink the way that platform selection was tracked; after speaking to some PMs, we settled on a "shopping cart" element that I included in the final design.</p>
 
-      <h1>Quick Run Flow</h1>
+      <h2>Quick Run Flow</h2>
 
       <p>My work on Platform Versioning led naturally to the "Quick Run" user flow, where a user is able to select and execute a suite of tests against specific testing variables (e.g. which Site + Environment, Browsers, Versions, etc.). This flow consisted of 3 stages: naming, platform version selection, and confirmation.</p>
 
       <img src="assets/stylesheets/images/rfqa/quick_run.png" alt="quick run">
 
-      <p class="caption">The three stages for executing a Quick Run</p>
+      <p class="caption">The three stages for executing a Quick Run &mdash; naming, platform version selection, and confirmation</p>
 
-      <h1>Final Prototype</h1>
+      <h2>Final Prototype</h2>
 
       <p>The final Invision prototype can be found <a href="https://invis.io/C7CYAF3N4#/247529116_Start_Hidden">here</a> &mdash; it covers the Quick Run and Platform Versioning.</p>
 
@@ -170,13 +192,17 @@
 
       Currently, the new design is still in development &mdash; there are many considerations for such a wide reaching redesign. Hopefully it'll be shipped soon!</p>
 
-      <h2 class="divide">Project 2: Sites &amp; Environments</h2>
+      <h2 class="divide" id="sites"><em>Project 2 &mdash;&mdash;</em><br>Sites &amp; Environments</h2>
 
       <p>My second  main project was to redesign the Sites &amp; Environments section of the Settings pages, where users were able to specify the sites (websites) and environments (staging environments) that their tests would be run against. Users would be able to add environments, each of which would have a list of corresponding user-defined sites (either a webpage or a mobile app download). Additionally, users would be able to set defaults, which would be reflected when running a test.</p>
       
       <div class="mult-img">
-        <img src="assets/stylesheets/images/rfqa/se_og.png" style="width: 46.2%;" alt="original static">
-        <img src="assets/stylesheets/images/rfqa/se_existing.gif" style="width: 53.2%;" alt="original moving">
+        <div style="flex: 1.075169">
+          <img src="assets/stylesheets/images/rfqa/se_og.png" alt="original static">
+        </div>
+        <div style="flex: 1.235294">
+          <img src="assets/stylesheets/images/rfqa/se_existing.gif" alt="original moving">
+        </div>
       </div>
 
       <p class="caption">The previous tabular design for Sites &amp; Environments (1) &mdash; confusing at scale (2)</p>
@@ -190,7 +216,7 @@
         <li>Lack of visual hierarchy in the original design, as well as visual clutter (e.g. the edit and delete buttons, which were presented beside every Environment and Site entry).</li>
       </ol>
 
-      <h1>Diverging Ideation</h1>
+      <h2>Diverging Ideation</h2>
 
       <p>Based on these needs, I hit the ground running with ideation &mdash; I was able to build out some potential screens and flows.</p>
       
@@ -199,15 +225,19 @@
       <p class="caption">Ideation for Sites &amp; Environments</p>
 
       <div class="mult-img">
-        <img src="assets/stylesheets/images/rfqa/se_editing flow.png" style="width: 55.6%;" alt="sketch file">
-        <img src="assets/stylesheets/images/rfqa/se_default.png" style="width: 43.4%;" alt="default design">
+        <div style="flex: 1.201274">
+          <img src="assets/stylesheets/images/rfqa/se_editing flow.png" alt="sketch file">
+        </div>
+        <div style="flex: 0.9368932">
+          <img src="assets/stylesheets/images/rfqa/se_default.png" alt="default design">
+        </div>
       </div>
 
       <p class="caption">Ideation continued &mdash; defining user flows (1) thinking about how to style defaults (2)</p>
 
       <p>In particular, I was focued on the task of finding a particular site, and how I could make that process as seamless as possible.</p>
 
-      <h1>Converging Ideation &amp; Testing</h1>
+      <h2>Converging Ideation &amp; Testing</h2>
 
       <p>At this point, I was able to focus in on a final design and produce hi-fi mocks. I validated my design decisions with the product and customer success teams, and was able to run some basic usability tests with them. Unfortunately, I was not able to directly user test my designs as I would have liked &mdash; as mentioned previously, user testing was hard to accomplish given the constraints</p>
 
@@ -224,7 +254,7 @@
         <li>Improved management for mobile devices and Sites, including the ability to add multiple mobile applications in one site.</li>
       </ol>
 
-      <h1>Final Prototype &amp; Implementation</h1>
+      <h2>Final Prototype &amp; Implementation</h2>
 
       <p>The completed Invision prototype can be seen <a href="https://invis.io/BKCSH2T3F#/245951197_web_Sites_Start">here</a>.
 
@@ -235,7 +265,7 @@
       <img src="assets/stylesheets/images/rfqa/se_live.gif" alt="live gif">
       <p class="caption">The new design for Sites &amp; Environments! It's live.</p>
 
-      <h1 class="divide">Conclusion + Reflections</h1>
+      <h2 class="divide">Conclusion + Reflections</h2>
 
       <p>There's so much that I wasn't able to include in this write-up &mdash; for example, what I learned working at a start up, and how I was able to contribute in growing design processes at such a young company. I also redesigned various other points of the platform, including browser icons and pagination. If there's anything in particular you want to hear about, please feel free to reach out. I have so much to talk about! 
 

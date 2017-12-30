@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Cousine:400,700");
 @font-face {
   font-family: 'Apercu';
   src: url("apercu/apercu-mono-webfont.eot");
@@ -7,12 +7,17 @@
   font-family: 'Plex';
   src: url("plex/IBMPlexSans-Regular.eot");
   src: url("plex/IBMPlexSans-Regular.woff") format("woff"), url("plex/IBMPlexSans-Regular.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Mono';
+  src: url("plex-m/IBMPlexMono-Regular.eot");
+  src: url("plex-m/IBMPlexMono-Regular.woff") format("woff"), url("plex-m/IBMPlexMono-Regular.woff2") format("woff2"); }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+#guts-flash h2, h2, h3, h4, #index .f-caption, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -76,50 +81,56 @@ html {
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.3); }
 
-/*
-  ========================================
-  Custom styles
-  ========================================
-*/
 /* Text */
-body {
-  font: 300 16px "Apercu", "Karla", sans-serif;
-  font-size: 1.6rem;
-  overflow-y: scroll; }
-
 strong, b {
   font-weight: 500; }
 
 em {
   font-style: italic; }
 
-h5 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 16px; }
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  font: 300 1.8rem "Cousine", "Apercu", sans-serif;
+  overflow-y: scroll; }
 
-h4 {
-  font-weight: 300;
-  margin: -16px 0 24px 0; }
-
+/* Text */
 p, li {
-  font: 400 1.6rem "Plex", "Work Sans", sans-serif;
+  font: 300 1.6rem "Plex", sans-serif;
   line-height: 122%;
-  letter-spacing: .1px;
   color: #252525; }
+
+h1, #guts-flash h2 {
+  font-size: 9rem;
+  line-height: 104%;
+  word-spacing: -16px; }
+
+h2 {
+  font-size: 2.2rem; }
+
+h3 {
+  font-size: 6.2rem;
+  line-height: 100%; }
+
+h4, #index .f-caption {
+  font: 300 2.2rem "Plex", sans-serif;
+  letter-spacing: .1px;
+  line-height: 136%; }
 
 a,
 a:visited {
   color: #000; }
 
-a:hover {
-  color: #4747ff; }
-
+/* Index Text */
 #index * {
   color: white; }
 
 #index .bar2 a:hover,
-#index .subh a:hover {
+#index .subh a:hover,
+a:hover {
   color: #ff25e5; }
 
 /* Hover Movement */
@@ -146,44 +157,48 @@ a:hover {
   transform: translateX(-4px); }
 
 /* Index Nav */
-.bar {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 48px; }
-
-.bar2 {
-  margin: 0 0 0 6vw; }
-
-.bar2 a:hover {
-  color: #4747ff; }
-
-nav a {
-  text-decoration: none; }
-
-.nav {
+nav {
   margin-top: 8vh;
   z-index: 1; }
+  nav a {
+    text-decoration: none; }
+  nav h5 {
+    margin-bottom: 16px; }
+  nav .bar {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 48px; }
+  nav .bar2 {
+    margin-left: 6vw; }
 
 footer {
   position: absolute;
   bottom: 8vh;
   right: 5vw;
   opacity: .18; }
-  footer h1 {
-    font: 300 1.2rem "Apercu", "Karla", sans-serif; }
 
 /* Back Nav */
 .nav2 {
   position: fixed;
-  top: 12%;
-  left: 4%; }
+  top: 8.2vh;
+  left: 3.2vw; }
+  .nav2 h1, .nav2 #guts-flash h2, #guts-flash .nav2 h2 {
+    font-size: 1.8rem; }
   .nav2 #lian-home-button {
     font-weight: 700;
     font-size: 3rem;
     text-decoration: none;
     color: black; }
   .nav2 #lian-home-button:hover {
-    color: #4747ff; }
+    color: #ff25e5; }
+
+.other-nav {
+  position: fixed;
+  width: 10vw;
+  bottom: 10vh;
+  right: 8vw; }
+  .other-nav h2 {
+    margin-bottom: 20px; }
 
 /* Index Flashes */
 .logo-flash {
@@ -193,9 +208,6 @@ footer {
   left: 36%;
   top: 12%;
   z-index: -1; }
-
-.f-caption {
-  margin-top: 20px; }
 
 /* Flash Pic*/
 #earth-p {
@@ -211,35 +223,23 @@ img {
   display: inline-block;
   margin-left: -2px; }
 
-#guts,
-#guts-about {
+#guts-about,
+#index {
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
 
-#guts-about {
+/* Index */
+#index {
   width: 100%;
   height: 100%;
   padding: 8vh 0 0 6vw; }
-  #guts-about h1,
-  #guts-about h3 {
-    font-weight: 700;
-    font-size: 9rem;
-    line-height: 104%;
-    word-spacing: -16px; }
-  #guts-about h3 {
-    width: 50%; }
-  #guts-about h4,
-  #guts-about .f-caption {
-    font: 400 2.2rem "Plex", "Work Sans", sans-serif;
-    letter-spacing: .1px;
-    width: 94%;
-    line-height: 136%; }
-  #guts-about h4 {
-    margin: 0; }
-  #guts-about .f-caption {
-    width: 56%; }
-  #guts-about .subh {
+  #index h4, #index .f-caption {
+    width: 94%; }
+  #index .f-caption {
+    width: 56%;
+    margin-top: 20px; }
+  #index .subh {
     width: 80%;
     margin-top: 20px; }
 
@@ -248,21 +248,14 @@ img {
   width: 90vw;
   min-height: 380px;
   min-width: 660px; }
+  #guts-flash h2 {
+    width: 50%; }
 
 #guts {
-  margin: 8vh 0 10vh 10vw; }
-  #guts h3 {
-    font-weight: 700;
-    font-size: 6.2rem;
-    line-height: 100%; }
-  #guts h4 {
-    font: 400 2.2rem "Plex", "Work Sans", sans-serif;
-    letter-spacing: .1px;
+  margin: 8vh 0 10vh 8vw; }
+  #guts h4, #guts #index .f-caption, #index #guts .f-caption {
     line-height: 122%;
     margin: 8px 0 48px 0; }
-
-#title {
-  margin-left: 0; }
 
 /* About Page */
 #about-box {
@@ -282,189 +275,87 @@ img {
   position: fixed;
   padding-left: 1vw; }
 
-/* Pull Quotes */
-/*
-
-h2 {
-  font-size: 2.2rem;
-  padding-bottom: 30px;
-  max-width: 90%;
-}
-
-h2:after {
-  content: '';
-  display: block;
-  background: black;
-  height: 2px;
-  width: 24%;
-  margin: 16px auto auto 0;
-}
-
-*/
 /* Body Content */
-#main-content {
-  width: 72%;
-  min-width: 760px; }
-  #main-content h1 {
+#info, #main-content {
+  display: inline-block;
+  vertical-align: top; }
+  #info h2, #main-content h2 {
     margin-bottom: 20px;
-    font-size: 2.2rem; }
-  #main-content h2 {
-    font-size: 3.2rem;
-    margin-bottom: 20px; }
-  #main-content p,
-  #main-content ol {
-    margin-bottom: 30px;
-    line-height: 130%; }
-  #main-content img {
-    margin-bottom: 30px;
-    max-width: 100%; }
-  #main-content .caption {
-    margin: -14px 0 40px 0;
-    font-size: 1.3rem;
-    text-align: center; }
-  #main-content ol {
-    padding-left: 60px;
-    max-width: 96%; }
-  #main-content .mult-img {
-    margin-bottom: 30px; }
-    #main-content .mult-img img {
-      margin-bottom: 0;
-      vertical-align: middle; }
-    #main-content .mult-img img:not(:last-child) {
-      margin-right: -4px; }
+    line-height: 112%; }
 
-.divide:before {
-  content: '';
-  display: block;
-  background: black;
-  height: 1px;
+#info {
+  width: 16vw;
+  position: fixed;
+  text-align: left; }
+  #info .toc {
+    margin-top: 16%; }
+
+#content, #main-content, #flyer-content, #photo-content {
+  margin-left: 16vw;
+  width: 52vw; }
+
+#main-content p,
+#main-content ol {
+  margin-bottom: 30px;
+  line-height: 130%; }
+#main-content ol {
+  padding-left: 60px;
+  max-width: 96%; }
+#main-content img {
+  margin-bottom: 30px;
+  max-width: 100%; }
+#main-content .divide {
+  padding-top: 30px; }
+#main-content .caption {
+  margin: -14px 0 40px 0;
+  font-size: 1.3rem;
+  text-align: center; }
+#main-content .mult-img {
   width: 100%;
-  margin: 0 0 30px 0;
-  opacity: 0.1; }
+  display: flex;
+  margin-bottom: 30px; }
+  #main-content .mult-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0; }
+  #main-content .mult-img div:not(:last-child) {
+    margin-right: 4px; }
 
 #img-stack img:not(:last-child) {
-  margin-bottom: 2px; }
-
-#thirds img {
-  max-width: 33%; }
-
-#halfs img {
-  max-width: 49%; }
+  margin-bottom: 0px; }
 
 /* Flyers */
-.fly img {
-  display: inline-block;
-  vertical-align: top;
-  background-color: transparent;
-  width: 54%;
-  margin-left: 4%; }
+#flyer-content h2 {
+  margin-bottom: 30px; }
+#flyer-content .fly {
+  margin-bottom: 80px; }
+  #flyer-content .fly img {
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+    width: 50%;
+    margin-right: 4%; }
+  #flyer-content .fly .fly-content {
+    display: inline-block;
+    width: 30%; }
 
-.fly:not(:last-child):after {
-  content: '';
-  display: block;
-  background: black;
-  height: 2px;
-  width: 30%;
-  margin: 20px 0 50px 35%; }
+/* Photos */
+#photo-content {
+  display: flex;
+  justify-content: center; }
+  #photo-content img {
+    margin: 0;
+    max-width: 100%; }
 
-.fly-content {
-  display: inline-block;
-  margin-top: 100px;
-  width: 40%; }
-
-/* Photo World */
 .col-1-2 {
   display: inline-block;
   vertical-align: top;
-  width: 45%;
-  padding: 0 4px 60px 0; }
-
-.col-1-2 img {
-  width: 100%; }
+  width: 50%; }
 
 /* 
   ==================
   Media Queries
   ==================
 */
-@media (max-width: 700px) {
-  .nav2 {
-    display: none; } }
-@media (max-width: 900px) {
-  #guts-about h1,
-  #guts-about h3 {
-    font-weight: 700;
-    font-size: 6.2rem;
-    line-height: 104%;
-    word-spacing: -16px;
-    margin-left: 0; }
-  #guts-about h4,
-  #guts-about .f-caption {
-    font-size: 2.2rem; }
-  #guts-about .f-caption {
-    width: 50%; }
-
-  .bar {
-    margin-right: 10px; }
-
-  #about-box img {
-    margin-top: -3vh; }
-
-  #guts h3 {
-    font-size: 4.6rem; }
-
-  #main-content {
-    width: 90%;
-    min-width: 0; }
-
-  .fly {
-    min-width: 545px;
-    max-width: 1300px; }
-    .fly img {
-      vertical-align: middle; }
-
-  .fly-content {
-    margin-top: 0;
-    vertical-align: middle; } }
-@media (max-width: 1100px) {
-  #about-box img {
-    height: 62vh;
-    min-height: 480px;
-    width: 76vw;
-    object-fit: cover; }
-
-  .intro-text {
-    width: 70vw;
-    margin: 36px 0 0 12px; } }
-@media (min-height: 900px) and (min-width: 1300px) {
-  #guts-about h1,
-  #guts-about h3 {
-    font-size: 12rem;
-    word-spacing: -16px;
-    margin: 0 0 30px 0; }
-  #guts-about h4,
-  #guts-about .f-caption {
-    font-size: 2.8rem; } }
-@media (min-height: 700px) and (min-width: 1300px) {
-  #guts-about h1,
-  #guts-about h3 {
-    font-size: 9rem;
-    word-spacing: -16px;
-    margin-bottom: 20px; }
-  #guts-about h4,
-  #guts-about .f-caption {
-    font-size: 2.2rem; } }
-@media (min-height: 900px) and (min-width: 1300px) {
-  #guts-about h1,
-  #guts-about h3 {
-    font-size: 12rem;
-    word-spacing: -16px;
-    margin-bottom: 20px; }
-  #guts-about h4,
-  #guts-about .f-caption {
-    font-size: 2.8rem; } }
-@media (min-width: 1600px) {
-  #intro-text {
-    font-size: 2.2rem; } }
 
 /*# sourceMappingURL=main.css.map */
