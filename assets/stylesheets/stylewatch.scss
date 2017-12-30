@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cousine:400,700');
 
 @font-face{ 
-  font-family: 'Apercu';
-  src: url('apercu/apercu-mono-webfont.eot');
-  src: url('apercu/apercu-mono-webfont.eot?#iefix') format('embedded-opentype'),
-       url('apercu/apercu-mono-webfont.woff') format('woff'),
-       url('apercu/apercu-mono-webfont.ttf') format('truetype'),
-       url('apercu/apercu-mono-webfont.svg#webfont') format('svg');
-}
-
-@font-face{ 
   font-family: 'Plex';
   src: url('plex/IBMPlexSans-Regular.eot');
   src: url('plex/IBMPlexSans-Regular.woff') format('woff'),
@@ -137,7 +128,7 @@ p, li {
 }
 
 h1 {
-  font-size: 9rem;
+  font-size: 10rem;
   line-height: 104%;    
   word-spacing: -16px;
 }
@@ -202,36 +193,18 @@ a:hover {
   transform: translateX(-4px);
 }
 
-/* Index Nav */
-
-nav {
-  margin-top: 8vh;
-  z-index: 1;
-
-  a {
-    text-decoration: none;
-  }
-
-  h5 {
-    margin-bottom: 16px;
-  }
-
-  .bar {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 48px;
-  }
-
-  .bar2 {
-    margin-left: 6vw;
-  }
-}
+/* Footer */
 
 footer {
   position: absolute;
   bottom: 8vh;
   right: 5vw;
-  opacity: .18;
+  opacity: .1;
+
+  h5 {
+    font-size: 1.4rem;
+    color: white;
+  }
 }
 
 /* Back Nav */
@@ -272,17 +245,16 @@ footer {
 
 .logo-flash {
   position: absolute;
-  max-width: 58%;
+  max-width: 58vw;
   min-width: 600px;
-  left: 36%;
-  top: 12%;
+  left: 6vw;
+  top: 3vh;
   z-index: -1;
 }
 
-/* Flash Pic*/
-
 #earth-p {
-  height: 100%; 
+  height: 110vh; 
+  margin-top: -10vh;
   width: 100vw;
   position: absolute;
   z-index: -1; 
@@ -294,7 +266,6 @@ footer {
 img {
   object-fit: contain;
   display: inline-block;
-  margin-left: -2px;
 }
 
 #guts-about, 
@@ -306,30 +277,54 @@ img {
 
 /* Index */
 
+nav {
+  width: 40vw;
+  margin: 32vh 0 0 48vw;
+
+  a {
+    text-decoration: none;
+  }
+
+  h5 {
+    margin-bottom: 16px;
+  }
+
+  .bar {
+    display: inline-block;
+    vertical-align: top;
+    margin: 48px 36px 0 0;
+  }
+}
+
 #index {
-  width: 100%;
-  height: 100%;
-  padding: 8vh 0 0 6vw;
+  margin: 8vh 0 0 4vw;
+
+  h1 {
+    position: absolute;
+    width: 42vw;
+    text-align: justify;
+  }
 
   h4 {
-    width: 94%;
-  }
-
-  .f-caption {
-    @extend h4;
-    width: 56%;
-    margin-top: 20px;
-  }
-
-  .subh {
     width: 80%;
-    margin-top: 20px;
   }
+}
+
+.subh, 
+.f-caption {
+  position: absolute;
+  width: 40vw;
+  margin: 2vh 0 0 48vw;
+}
+
+.f-caption {
+  @extend h4;
 }
 
 #guts-flash {
   height: 56vh;
   width: 90vw;
+  position: absolute;
   min-height: 380px;
   min-width: 660px;
 

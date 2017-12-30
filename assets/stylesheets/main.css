@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cousine:400,700");
 @font-face {
-  font-family: 'Apercu';
-  src: url("apercu/apercu-mono-webfont.eot");
-  src: url("apercu/apercu-mono-webfont.eot?#iefix") format("embedded-opentype"), url("apercu/apercu-mono-webfont.woff") format("woff"), url("apercu/apercu-mono-webfont.ttf") format("truetype"), url("apercu/apercu-mono-webfont.svg#webfont") format("svg"); }
-@font-face {
   font-family: 'Plex';
   src: url("plex/IBMPlexSans-Regular.eot");
   src: url("plex/IBMPlexSans-Regular.woff") format("woff"), url("plex/IBMPlexSans-Regular.woff2") format("woff2"); }
@@ -17,7 +13,7 @@
 */
 html, body, div, span, applet, object, iframe,
 h1,
-#guts-flash h2, h2, h3, h4, #index .f-caption, h5, h6, p, blockquote, pre,
+#guts-flash h2, h2, h3, h4, .f-caption, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -104,7 +100,7 @@ p, li {
   color: #252525; }
 
 h1, #guts-flash h2 {
-  font-size: 9rem;
+  font-size: 10rem;
   line-height: 104%;
   word-spacing: -16px; }
 
@@ -115,7 +111,7 @@ h3 {
   font-size: 6.2rem;
   line-height: 100%; }
 
-h4, #index .f-caption {
+h4, .f-caption {
   font: 300 2.2rem "Plex", sans-serif;
   letter-spacing: .1px;
   line-height: 136%; }
@@ -156,26 +152,15 @@ a:hover {
   -webkit-transform: translateX(-4px);
   transform: translateX(-4px); }
 
-/* Index Nav */
-nav {
-  margin-top: 8vh;
-  z-index: 1; }
-  nav a {
-    text-decoration: none; }
-  nav h5 {
-    margin-bottom: 16px; }
-  nav .bar {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 48px; }
-  nav .bar2 {
-    margin-left: 6vw; }
-
+/* Footer */
 footer {
   position: absolute;
   bottom: 8vh;
   right: 5vw;
-  opacity: .18; }
+  opacity: .1; }
+  footer h5 {
+    font-size: 1.4rem;
+    color: white; }
 
 /* Back Nav */
 .nav2 {
@@ -203,15 +188,15 @@ footer {
 /* Index Flashes */
 .logo-flash {
   position: absolute;
-  max-width: 58%;
+  max-width: 58vw;
   min-width: 600px;
-  left: 36%;
-  top: 12%;
+  left: 6vw;
+  top: 3vh;
   z-index: -1; }
 
-/* Flash Pic*/
 #earth-p {
-  height: 100%;
+  height: 110vh;
+  margin-top: -10vh;
   width: 100vw;
   position: absolute;
   z-index: -1;
@@ -220,8 +205,7 @@ footer {
 /* Grid */
 img {
   object-fit: contain;
-  display: inline-block;
-  margin-left: -2px; }
+  display: inline-block; }
 
 #guts-about,
 #index {
@@ -230,22 +214,37 @@ img {
   align-items: flex-start; }
 
 /* Index */
+nav {
+  width: 40vw;
+  margin: 32vh 0 0 48vw; }
+  nav a {
+    text-decoration: none; }
+  nav h5 {
+    margin-bottom: 16px; }
+  nav .bar {
+    display: inline-block;
+    vertical-align: top;
+    margin: 48px 36px 0 0; }
+
 #index {
-  width: 100%;
-  height: 100%;
-  padding: 8vh 0 0 6vw; }
+  margin: 8vh 0 0 4vw; }
+  #index h1, #index #guts-flash h2, #guts-flash #index h2 {
+    position: absolute;
+    width: 42vw;
+    text-align: justify; }
   #index h4, #index .f-caption {
-    width: 94%; }
-  #index .f-caption {
-    width: 56%;
-    margin-top: 20px; }
-  #index .subh {
-    width: 80%;
-    margin-top: 20px; }
+    width: 80%; }
+
+.subh,
+.f-caption {
+  position: absolute;
+  width: 40vw;
+  margin: 2vh 0 0 48vw; }
 
 #guts-flash {
   height: 56vh;
   width: 90vw;
+  position: absolute;
   min-height: 380px;
   min-width: 660px; }
   #guts-flash h2 {
@@ -253,7 +252,7 @@ img {
 
 #guts {
   margin: 8vh 0 10vh 8vw; }
-  #guts h4, #guts #index .f-caption, #index #guts .f-caption {
+  #guts h4, #guts .f-caption {
     line-height: 122%;
     margin: 8px 0 48px 0; }
 
