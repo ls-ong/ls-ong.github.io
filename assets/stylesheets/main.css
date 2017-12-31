@@ -2,11 +2,21 @@
 @font-face {
   font-family: 'Plex';
   src: url("plex/IBMPlexSans-Regular.eot");
-  src: url("plex/IBMPlexSans-Regular.woff") format("woff"), url("plex/IBMPlexSans-Regular.woff2") format("woff2"); }
+  src: url("plex/IBMPlexSans-Regular.woff") format("woff"), url("plex/IBMPlexSans-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
 @font-face {
-  font-family: 'Mono';
-  src: url("plex-m/IBMPlexMono-Regular.eot");
-  src: url("plex-m/IBMPlexMono-Regular.woff") format("woff"), url("plex-m/IBMPlexMono-Regular.woff2") format("woff2"); }
+  font-family: 'Plex';
+  src: url("plex/IBMPlexSans-Italic.eot");
+  src: url("plex/IBMPlexSans-Italic.woff") format("woff"), url("plex/IBMPlexSans-Italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Plex';
+  src: url("plex/IBMPlexSans-SemiBold.eot");
+  src: url("plex/IBMPlexSans-SemiBold.woff") format("woff"), url("plex/IBMPlexSans-SemiBold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -216,7 +226,8 @@ img {
 /* Index */
 nav {
   width: 40vw;
-  margin: 32vh 0 0 48vw; }
+  margin: 32vh 0 0 48vw;
+  z-index: 1; }
   nav a {
     text-decoration: none; }
   nav h5 {
@@ -256,29 +267,11 @@ nav {
     line-height: 122%;
     margin: 8px 0 48px 0; }
 
-/* About Page */
-#about-box {
-  margin: 10vh 0 10vh 2vw; }
-  #about-box img {
-    width: 44%;
-    min-width: 300px;
-    margin-right: 1%; }
-
-.intro-text {
-  display: inline-block;
-  vertical-align: top;
-  width: 40vw;
-  margin-top: 1%; }
-
-#about-me {
-  position: fixed;
-  padding-left: 1vw; }
-
 /* Body Content */
-#info, #main-content {
+#info, #main-content, #about-box {
   display: inline-block;
   vertical-align: top; }
-  #info h2, #main-content h2 {
+  #info h2, #main-content h2, #about-box h2 {
     margin-bottom: 20px;
     line-height: 112%; }
 
@@ -289,35 +282,36 @@ nav {
   #info .toc {
     margin-top: 16%; }
 
-#content, #main-content, #flyer-content, #photo-content {
+#content, #main-content, #about-box, #flyer-content, #photo-content {
   margin-left: 16vw;
   width: 52vw; }
 
-#main-content p,
-#main-content ol {
+#main-content p, #about-box p,
+#main-content ol,
+#about-box ol {
   margin-bottom: 30px;
   line-height: 130%; }
-#main-content ol {
+#main-content ol, #about-box ol {
   padding-left: 60px;
   max-width: 96%; }
-#main-content img {
+#main-content img, #about-box img {
   margin-bottom: 30px;
   max-width: 100%; }
-#main-content .divide {
+#main-content .divide, #about-box .divide {
   padding-top: 30px; }
-#main-content .caption {
+#main-content .caption, #about-box .caption {
   margin: -14px 0 40px 0;
   font-size: 1.3rem;
   text-align: center; }
-#main-content .mult-img {
+#main-content .mult-img, #about-box .mult-img {
   width: 100%;
   display: flex;
   margin-bottom: 30px; }
-  #main-content .mult-img img {
+  #main-content .mult-img img, #about-box .mult-img img {
     width: 100%;
     height: auto;
     margin-bottom: 0; }
-  #main-content .mult-img div:not(:last-child) {
+  #main-content .mult-img div:not(:last-child), #about-box .mult-img div:not(:last-child) {
     margin-right: 4px; }
 
 #img-stack img:not(:last-child) {
@@ -338,6 +332,23 @@ nav {
     display: inline-block;
     width: 30%; }
 
+/* About Page */
+#about-box {
+  width: 70vw; }
+  #about-box #img-cap {
+    display: inline-block;
+    vertical-align: top;
+    width: 34vw;
+    min-width: 300px; }
+    #about-box #img-cap img {
+      width: 100%; }
+
+.intro-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 30vw;
+  margin: 1vh 0 0 3vw; }
+
 /* Photos */
 #photo-content {
   display: flex;
@@ -356,5 +367,19 @@ nav {
   Media Queries
   ==================
 */
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%; } }
+@media (max-width: 840px) {
+  .intro-text {
+    display: block;
+    margin: 0;
+    width: 80%; }
+
+  .other-nav {
+    display: none; }
+
+  #main-content, #about-box {
+    width: 60vw; } }
 
 /*# sourceMappingURL=main.css.map */

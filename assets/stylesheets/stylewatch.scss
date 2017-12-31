@@ -5,13 +5,29 @@
   src: url('plex/IBMPlexSans-Regular.eot');
   src: url('plex/IBMPlexSans-Regular.woff') format('woff'),
        url('plex/IBMPlexSans-Regular.woff2') format('woff2');
+
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face{ 
-  font-family: 'Mono';
-  src: url('plex-m/IBMPlexMono-Regular.eot');
-  src: url('plex-m/IBMPlexMono-Regular.woff') format('woff'),
-       url('plex-m/IBMPlexMono-Regular.woff2') format('woff2');
+  font-family: 'Plex';
+  src: url('plex/IBMPlexSans-Italic.eot');
+  src: url('plex/IBMPlexSans-Italic.woff') format('woff'),
+       url('plex/IBMPlexSans-Italic.woff2') format('woff2');
+
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face{ 
+  font-family: 'Plex';
+  src: url('plex/IBMPlexSans-SemiBold.eot');
+  src: url('plex/IBMPlexSans-SemiBold.woff') format('woff'),
+       url('plex/IBMPlexSans-SemiBold.woff2') format('woff2');
+
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -280,6 +296,7 @@ img {
 nav {
   width: 40vw;
   margin: 32vh 0 0 48vw;
+  z-index: 1;
 
   a {
     text-decoration: none;
@@ -341,30 +358,6 @@ nav {
     line-height: 122%;
     margin: 8px 0 48px 0;
   }
-}
-
-/* About Page */
-
-#about-box {
-  margin: 10vh 0 10vh 2vw;
-
-  img {
-    width: 44%;
-    min-width: 300px;
-    margin-right: 1%;
-  }
-}
-
-.intro-text {
-  display: inline-block;
-  vertical-align: top;
-  width: 40vw;
-  margin-top: 1%;
-}
-
-#about-me {
-    position: fixed;
-    padding-left: 1vw;
 }
 
 /* Body Content */
@@ -471,6 +464,31 @@ nav {
   }
 }
 
+/* About Page */
+
+#about-box {
+  @extend #main-content;
+  width: 70vw;
+
+  #img-cap {
+    display: inline-block;
+    vertical-align: top;
+    width: 34vw;
+    min-width: 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.intro-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 30vw;
+  margin: 1vh 0 0 3vw;
+}
+
 /* Photos */
 
 #photo-content {
@@ -496,138 +514,24 @@ nav {
   ==================
 */
 
-// @media (max-width: 700px) {
-//   .nav2 {
-//     display: none;
-//   }
-// }
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
 
-// @media (max-width: 900px) { 
+@media (max-width: 840px) {
+  .intro-text {
+    display: block;
+    margin: 0;
+    width: 80%;
+  }
 
-//   #guts-about {
-//     h1,
-//     h3 {
-//       font-weight: 700;
-//       font-size: 6.2rem;
-//       line-height: 104%;    
-//       word-spacing: -16px;
-//       margin-left: 0;
-//     }
+  .other-nav {
+    display: none;
+  }
 
-//     h4,
-//     .f-caption {
-//       font-size: 2.2rem;
-//     }
-
-//     .f-caption {
-//       width: 50%;
-//     }
-//   }
-
-//   .bar {
-//     margin-right: 10px;
-//   }
-
-//   #about-box img {
-//     margin-top: -3vh;
-//   }
-
-//   #guts {
-//     h3 {
-//       font-size: 4.6rem;
-//     }
-//   }
-
-//   #main-content {
-//     width: 90%;
-//     min-width: 0;
-//   } 
-
-//   .fly {
-//     min-width: 545px;
-//     max-width: 1300px;
-    
-//     img {
-//       vertical-align: middle;
-//     }
-//   }
-
-//   .fly-content {
-//     margin-top: 0;
-//     vertical-align: middle;
-//   }
-// }
-
-// @media (max-width: 1100px) { 
-
-//   #about-box img {
-//     height: 62vh;
-//     min-height: 480px;
-//     width: 76vw;
-//     object-fit: cover;
-//   }
-
-//   .intro-text {
-//     width: 70vw;
-//     margin: 36px 0 0 12px;
-//   }
-// }
-
-// @media (min-height: 900px) and (min-width: 1300px) { 
-
-//   #guts-about {
-//     h1,
-//     h3 {
-//       font-size: 12rem;
-//       word-spacing: -16px;
-//       margin: 0 0 30px 0;
-//     }
-
-//     h4,
-//     .f-caption {
-//       font-size: 2.8rem;
-//     }
-//   }
-// }
-
-// @media (min-height: 700px) and (min-width: 1300px) { 
-
-//   #guts-about {
-//     h1,
-//     h3 {
-//       font-size: 9rem;
-//       word-spacing: -16px;
-//       margin-bottom: 20px;
-//     }
-
-//     h4,
-//     .f-caption {
-//       font-size: 2.2rem;
-//     }
-//   }
-// }
-
-// @media (min-height: 900px) and (min-width: 1300px) { 
-
-//   #guts-about {
-//     h1,
-//     h3 {
-//       font-size: 12rem;
-//       word-spacing: -16px;
-//       margin-bottom: 20px;
-//     }
-
-//     h4,
-//     .f-caption {
-//       font-size: 2.8rem;
-//     }
-//   }
-// }
-
-// @media (min-width: 1600px) {
-
-//     #intro-text {
-//       font-size: 2.2rem;
-//     }
-
-// }
+  #main-content {
+    width: 60vw;
+  }
+}

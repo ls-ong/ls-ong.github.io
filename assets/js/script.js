@@ -6,9 +6,9 @@ $(document).ready(function() {
 	var old = $("#guts-flash").html();
 
 	var id = ["#hexa", "#rainf", "#dive", "#act", "#bi", "#flyers"]
-	var color = ["#ffe9da", "#eefcee", "#fff1f1", "#f1f7ff", "#ffedd6", "#eee"]
-
+	// var color = ["#ffe9da", "#eefcee", "#fff1f1", "#f1f7ff", "#ffedd6", "#eee"]
 	var newcolor = ["#ffd874", "#2ed656", "#f87ad5", "#63c7ff", "#ff8b66", "#704c4c"]
+	var pagecolor = ["#fff7e3", "#d5f7dd", "#eee", "#dff3ff", "#ffe8e0", "#f0eded"]
 
 	var colorChange = function(id, color) {
 		$(id).hover(
@@ -59,15 +59,15 @@ $(document).ready(function() {
 
 	/* click */
 
-	var buttons = [".hvr-backward", "#lian-home-button", "#about-button"]
+	var buttons = [".other-nav a", ".hvr-backward", "#lian-home-button", "#about-button"]
 
 	var fade = function(button) {
-
-	    $(button).click(function(e){
-	        redirect = $(this).attr("href");
-	        e.preventDefault();
-	        $("body").fadeOut(100, function(){
-	            document.location.href = redirect
+	    $(button).click(
+	    	function(e){
+		        redirect = $(this).attr("href");
+		        e.preventDefault();
+		        $("body").fadeOut(100, function(){
+		            document.location.href = redirect
 	        });
 	    });
 	}
