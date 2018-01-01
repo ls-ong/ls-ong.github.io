@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 	/* click */
 
-	var buttons = [".other-nav a", ".hvr-backward", "#lian-home-button", "#about-button"]
+	var buttons = [".other-nav a", ".internal", ".hvr-backward", "#lian-home-button", "#about-button"]
 
 	var fade = function(button) {
 	    $(button).click(

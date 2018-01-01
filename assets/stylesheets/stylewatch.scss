@@ -144,7 +144,7 @@ p, li {
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 11.4rem;
   line-height: 104%;    
   word-spacing: -16px;
 }
@@ -295,7 +295,7 @@ img {
 
 nav {
   width: 40vw;
-  margin: 32vh 0 0 48vw;
+  margin: 32vh 0 0 56vw;
   z-index: 1;
 
   a {
@@ -318,7 +318,7 @@ nav {
 
   h1 {
     position: absolute;
-    width: 42vw;
+    width: 52vw;
     text-align: justify;
   }
 
@@ -331,7 +331,7 @@ nav {
 .f-caption {
   position: absolute;
   width: 40vw;
-  margin: 2vh 0 0 48vw;
+  margin: 2vh 0 0 56vw;
 }
 
 .f-caption {
@@ -477,6 +477,9 @@ nav {
     min-width: 300px;
 
     img {
+      margin-bottom: 0;
+      object-fit: cover;
+      height: 78vh;
       width: 100%;
     }
   }
