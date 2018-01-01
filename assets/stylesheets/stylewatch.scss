@@ -277,6 +277,14 @@ footer {
   background-image: url(images/blobs.jpg);
 }
 
+#back-vid {
+  position: absolute; 
+  z-index: -1; 
+  height: 110vh; 
+  margin-top: -10vh;
+  width: 100vw;
+}
+
 /* Grid */
 
 img {

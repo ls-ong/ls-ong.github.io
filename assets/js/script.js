@@ -39,7 +39,7 @@ $(document).ready(function() {
 	// }
 
 	for (i = 0; i < id.length; i++) {
-		colorChange(id[i], newcolor[i]);
+		colorChange(id[i], pagecolor[i]);
 		// textChange(id[i]);
 	}
 
