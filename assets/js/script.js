@@ -16,11 +16,13 @@ $(document).ready(function() {
 				var now = $(id + "-new").html();
 			    $("#guts-flash").animate({opacity: 0}, 0, function () {
 			        $("#guts-flash").stop().html(now).animate({opacity: 1});
+	    		// $("#back-vid").stop().fadeOut(300);
 			    $("body").stop().animate({backgroundColor: color}, 500);
 		    });
 		}, function () {
 			$("#guts-flash").animate({opacity: 0}, 0,  function () {
 		        $("#guts-flash").stop().html(old).animate({opacity: 1});
+	    	// $("#back-vid").stop().fadeIn(300);
 		    $("body").stop().animate({backgroundColor: ogcolor}, 500);
 		    });
 		});
@@ -37,25 +39,31 @@ $(document).ready(function() {
 	// 	    }, 200);
 	// 	});
 	// }
+	
+	if ($(window).width() >= 1000) {
+		
+		for (i = 0; i < id.length; i++) {
+			colorChange(id[i], pagecolor[i]);
+	    }
 
-	for (i = 0; i < id.length; i++) {
-		colorChange(id[i], pagecolor[i]);
-		// textChange(id[i]);
-	}
+		$("#world").hover(function(){
+			var nowearth = $("#world-new").html();
+		    $("#guts-flash").animate({opacity: 0}, 0, function () {
+		        $("#guts-flash").stop().html(nowearth).animate({opacity: 1});
+		    $("#earth-p").stop().fadeIn(500);
+		    });
+		}, function () {
+		    $("#guts-flash").animate({opacity: 0}, 0, function () {
+		        $("#guts-flash").stop().html(old).animate({opacity: 1});
+		    $("#earth-p").stop().fadeOut(500);
+		    });
+		});
 
-	$("#world").hover(function(){
-		var nowearth = $("#world-new").html();
-	    $("#guts-flash").animate({opacity: 0}, 0, function () {
-	        $("#guts-flash").stop().html(nowearth).animate({opacity: 1});
-	    $("#earth-p").stop().fadeIn(500);
-	    });
-	}, function () {
-	    $("#guts-flash").animate({opacity: 0}, 0, function () {
-	        $("#guts-flash").stop().html(old).animate({opacity: 1});
-	    $("#earth-p").stop().fadeOut(500);
-	    });
-	});
+	};
 
+	if ($(window).width() <= 1000) {
+		$(".bar a").attr("class", "non");
+	};
 
 	/* click */
 
