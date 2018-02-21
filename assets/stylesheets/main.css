@@ -343,6 +343,10 @@ nav {
     display: inline-block;
     width: 30%; }
 
+/* Blue */
+.week:not(:last-child) {
+  padding-bottom: 40px; }
+
 /* About Page */
 #about-box {
   width: 70vw; }
@@ -354,7 +358,7 @@ nav {
     #about-box #img-cap img {
       margin-bottom: 0;
       object-fit: cover;
-      height: 82vh;
+      height: 80vh;
       width: 100%; }
 
 .intro-text {

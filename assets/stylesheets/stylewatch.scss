@@ -479,6 +479,12 @@ nav {
   }
 }
 
+/* Blue */
+
+.week:not(:last-child) {
+  padding-bottom: 40px;
+}
+
 /* About Page */
 
 #about-box {
@@ -494,7 +500,7 @@ nav {
     img {
       margin-bottom: 0;
       object-fit: cover;
-      height: 82vh;
+      height: 80vh;
       width: 100%;
     }
   }
