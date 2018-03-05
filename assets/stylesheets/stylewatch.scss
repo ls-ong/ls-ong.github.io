@@ -482,7 +482,14 @@ nav {
 /* Blue */
 
 .week:not(:last-child) {
-  padding-bottom: 40px;
+  padding-bottom: 90px;
+}
+
+.week:after {
+  content: '';
+  border: 1px solid black;
+  display: block;
+  margin-top: 80px;
 }
 
 /* About Page */
