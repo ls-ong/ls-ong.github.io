@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i");
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.8); }
+
 body {
   font: 400 2.2rem "Karla", sans-serif;
   letter-spacing: -3px;
@@ -7,7 +17,7 @@ body {
   -moz-transform: scale(1.2, 1);
   transform: scale(1.2, 1);
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw; }
 
 .bod {
@@ -21,6 +31,9 @@ body {
 
 textarea {
   font: 400 1.4rem "Karla", sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: .8px;
+  -webkit-text-stroke-color: black;
   letter-spacing: -1px;
   hyphens: auto;
   -webkit-transform: scale(1.2, 1);
@@ -29,10 +42,11 @@ textarea {
 
 .small-text-form {
   width: 90%;
-  margin: 20px auto;
+  height: 280px;
+  margin: 10px auto;
   text-align: center;
   background-color: transparent;
-  padding: 12px;
+  padding: 18px;
   resize: vertical; }
 
 .submit-button {
@@ -51,8 +65,8 @@ textarea {
 
 @keyframes vroll {
   90% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(329deg); }
+    -webkit-transform: rotate(352deg);
+    transform: rotate(335deg); }
   100% {
     transform-origin: center;
     -webkit-transform: rotate(360deg);

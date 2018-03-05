@@ -485,10 +485,11 @@ nav {
   padding-bottom: 90px;
 }
 
-.week:after {
+.week:not(:last-child):after {
   content: '';
   border: 1px solid black;
   display: block;
+  width: 130%;
   margin-top: 80px;
 }
 
