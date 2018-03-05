@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i");
+body {
+  font: 400 2.2rem "Karla", sans-serif;
+  letter-spacing: -3px;
+  hyphens: auto;
+  -webkit-transform: scale(1.2, 1);
+  -moz-transform: scale(1.2, 1);
+  transform: scale(1.2, 1);
+  margin: 0;
+  overflow: hidden;
+  width: 100vw; }
+
+.bod {
+  position: absolute;
+  width: 50vw;
+  left: 0;
+  right: 0;
+  top: 20vh;
+  margin: auto;
+  text-align: center; }
+
+textarea {
+  font: 400 1.4rem "Karla", sans-serif;
+  letter-spacing: -1px;
+  hyphens: auto;
+  -webkit-transform: scale(1.2, 1);
+  -moz-transform: scale(1.2, 1);
+  transform: scale(1.2, 1); }
+
+.small-text-form {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  background-color: transparent;
+  padding: 12px;
+  resize: vertical; }
+
+.submit-button {
+  width: 90px;
+  height: 40px;
+  background-color: transparent; }
+
+.v-1 {
+  height: 100vh;
+  width: 100vw;
+  position: absolute; }
+
+#vector1 .vector-1,
+.v-1 .vector-1 {
+  animation: vroll 26s infinite; }
+
+@keyframes vroll {
+  90% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(329deg); }
+  100% {
+    transform-origin: center;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=v-1.css.map */
