@@ -344,6 +344,9 @@ nav {
     width: 30%; }
 
 /* Blue */
+#blue {
+  background-image: url("images/blue spirals.png"); }
+
 .week:not(:last-child) {
   padding-bottom: 90px; }
 
