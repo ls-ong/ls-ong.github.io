@@ -345,14 +345,18 @@ nav {
 
 /* Blue */
 #blue {
-  background-image: url("images/blue spirals.png"); }
+  background-image: url("images/blue/redblue.png");
+  color: white; }
+
+#blue * {
+  color: white; }
 
 .week:not(:last-child) {
   padding-bottom: 90px; }
 
 .week:not(:last-child):after {
   content: '';
-  border: 1px solid black;
+  border: 1px solid white;
   display: block;
   width: 130%;
   margin-top: 80px; }
