@@ -12,7 +12,8 @@
     <title>Lian Song</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
-    <!-- <link rel="stylesheet" href="assets/stylesheets/main.css"> -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108136201-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -21,14 +22,141 @@
 
 	  gtag('config', 'UA-108136201-1');
 	</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.color-2.1.2.min.js"></script>
   
   </head>
 
-  <body>
-	<div style="display: flex; align-items: center; justify-content: center; height: 90vh; overflow: hidden;">
-		<img src="assets/stylesheets/images/norm.png" style="margin-right: 40px"></img>
-	  	<h2>Be back soon.</h2>
-		<img src="assets/stylesheets/images/norm.png" style="margin-left: 40px"></img>
-	  </div>
+  <body id="splash" bgcolor="#5647ff">
+
+  	<div id="earth-p" hidden="hidden"></div>
+
+  	<!--
+
+	<iframe src="mesh.html" width="110%" height="120%" scrolling="no" style="margin: -8% -20% 0 -10%; position: absolute; z-index: -1"></iframe>
+
+	-->
+
+	<video id="back-vid" loop muted autoplay>
+		<source src="assets/stylesheets/images/22.mp4" type="video/mp4">
+	</video>
+
+	<div id="index">
+		<div id="guts-flash">
+			<h1><strong>Hi, I'm Lian &mdash; Product &amp; Visual Designer</strong></h1>
+
+			<div class="subh">
+				<h4>External VP at <a href="https://berkeleyinnovation.org/">Berkeley Innovation</a>, leading <a href="http://skydeck.berkeley.edu">SkyDeck</a> Design, studying Cognitive &amp; Data Science at UC Berkeley. I'll be joining <a href="https://www.ibm.com/design/">IBM Design</a> this summer. Check out my work, or find out more <a href="about.html" target="_self" id="about-button">about me</a> <span id="arrow">→</span></h4>
+			</div>
+		</div>
+
+		<nav class="nav-web">
+	    	<div class="bar">
+			  	<h5>UI/UX</h5>
+			  		
+			  		<ul>
+			  			<li><a href="rainforest.html" id="rainf" class="hvr-backward">Rainforest QA</a></li>
+			  			<li><a href="hexa.html" id="hexa" class="hvr-backward">Hexa Tea</a></li>
+			  			<li><a href="actransit.html" id="act" class="hvr-backward">AC Transit</a></li>
+			  			<!-- <li><a href="divein.html" id="dive" class="hvr-backward">Dive In</a></li> -->
+			  		</ul>
+		  	</div>
+
+		  	<div class="bar">
+			  	<h5>Visual</h5>
+
+			  		<ul>
+			  			<li><a href="bimarketing.html" id="bi" class="hvr-backward">BI Marketing</a></li>
+			  			<li><a href="flyers.html" id="flyers" class="hvr-backward">Flyers &amp; Logos</a></li>
+			  		</ul>
+		  	</div>
+
+		  	<div class="bar">
+		  	<h5>Photo</h5>
+		  		
+		  		<ul>
+		  			<li><a href="world.html" id="world" class="hvr-backward">Collection #1</a></li>
+		  		</ul>
+		  	</div>
+
+		  	<div class="bar bar2">
+		  	<h5>Let's connect!</h5>
+
+		  		<ul>
+		  			<li><a href="mailto:hello@liansong.co" target="_self">hello@liansong.co</a></li>
+		  			<li><a href="assets/lianResume.pdf">Resume</a></li>
+		  			<li><a href="https://www.linkedin.com/in/lian-song/">LinkedIn</a></li>
+		  		<ul>
+		  	</div>
+		</nav>
+	</div>
+
+	<!--Hidden-->
+
+	<div class="hidden">
+
+	  	<div id="rainf-new" hidden="hidden">
+
+	  		<h2>Rain&shy;forest QA</h2>
+	  		<p class="f-caption">A quest to automate quality assurance<br><em>Interaction Design, UI/UX</em></p>
+
+			<img src="assets/stylesheets/images/rfqa_s.png" class="logo-flash" alt="rainforest screen">
+
+	  	</div>
+	  	<div id="hexa-new" hidden="hidden">
+
+	  		<h2>Hexa Tea</h2>
+	  		<p class="f-caption">Re-imagining the teahouse experience<br><em>UX Research, Service Design</em></p>
+
+	  		<img src="assets/stylesheets/images/menu_s.png" class="logo-flash" alt="hexa tea menu"><br>
+
+	  	</div>
+	  	<div id="act-new" hidden="hidden">
+
+	  		<h2>AC Transit</h2>
+	  		<p class="f-caption">Making the Berkeley bus system friendlier<br><em>Mobile App Design, UI/UX</em></p>
+	  		
+	  		<img src="assets/stylesheets/images/screens_s.png" class="logo-flash" alt="ac transit pointers"><br>
+
+	  	</div>
+	  	<div id="dive-new" hidden="hidden">
+
+	  		<h2>Dive In</h2>
+	  		<p class="f-caption">An event page for community engagement<br><em>Web Design, UI/UX</em></p>
+	  		
+	  		<img src="assets/stylesheets/images/divein_s.png" class="logo-flash" alt="dive in float"><br>
+
+	  	</div>
+	  	<div id="bi-new" hidden="hidden">
+
+	  		<h2>Berkeley Innovation Marketing</h2>
+	  		<p class="f-caption">Design assets for Berkeley Innovation<br><em>Visual Design, Adobe Creative Suite</em></p>
+	  		
+	  		<img src="assets/stylesheets/images/bi_s.png" class="logo-flash" alt="bi marketing flyer"><br>
+
+	  	</div>
+	  	<div id="flyers-new" hidden="hidden">
+
+	  		<h2>Flyers &amp; Logos</h2>
+	  		<p class="f-caption">A collection of flyers and logos<br><em>Visual Design, Adobe Creative Suite</em></p>
+
+	  		
+	  		<img src="assets/stylesheets/images/flyers_s.png" class="logo-flash" alt="flyers logo"><br>
+	  	</div>
+		<div id="world-new" hidden="hidden">
+
+	  		<h2>Collection<br>#1</h2>
+	  		<p class="f-caption">Moments in a life<br><em>Photography</em></p>
+	  		
+	  		<img src="assets/stylesheets/images/blobs.jpg" style="height: 80vh; width: 58vw; opacity: .8; object-fit: cover;" class="logo-flash" alt="picture"><br>
+
+	  	</div>
+	</div>
+
+	<footer>
+		<h5>&#60;&#47;&#62; by Lian</h5>
+	</footer>
+
   </body>
-</html>
