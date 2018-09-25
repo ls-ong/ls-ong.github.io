@@ -1,27 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial");
-/*
-@font-face {
-  font-family: 'Plex';
-  src: url("plex/IBMPlexSans-Regular.eot");
-  src: url("plex/IBMPlexSans-Regular.woff") format("woff"), url("plex/IBMPlexSans-Regular.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'Plex';
-  src: url("plex/IBMPlexSans-Italic.eot");
-  src: url("plex/IBMPlexSans-Italic.woff") format("woff"), url("plex/IBMPlexSans-Italic.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic; }
-@font-face {
-  font-family: 'Plex';
-  src: url("plex/IBMPlexSans-SemiBold.eot");
-  src: url("plex/IBMPlexSans-SemiBold.woff") format("woff"), url("plex/IBMPlexSans-SemiBold.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal; }*/
 
 /* Text */
 strong, b {
-  font-weight: 500; }
+  font-weight: 600; }
 
 em {
   font-style: italic; }
@@ -56,13 +37,13 @@ h1, h3, h4, h5 {
   transform-origin: left;
 }
 
-p, ol {
+p, ol, #guts ul {
   font: 300 1.8rem "Questrial", "Plex";
   line-height: 2.4rem;
-  /*letter-spacing: -1px;*/
+  /*letter-spacing: .1px;*/
 }
 
-.all {
+.fade {
   -webkit-animation: fadein .6s ease-out;
   animation: fadein .6s ease-out; 
 }
@@ -73,16 +54,17 @@ p, ol {
   margin-bottom: 10px;
 }
 
-#front-page-about {
+#front-page {
   flex: 30%;
-  padding: 20vh 0 6vh 88px;
+  padding: 20vh 0 6vh calc(10vw + 23px);
+  overflow-x: hidden;
 }
 
-#front-page-about h1 {
+#front-page h1 {
   margin: 30px 0;
 }
 
-#front-page-about h3 {
+#front-page h3 {
   height: auto;
   max-width: 640px;
   min-width: 300px;
@@ -93,23 +75,27 @@ p, ol {
   margin-bottom: 30px;
 }
 
-#front-page-about h4 {
+.front h1 {
+  font-weight: 600;
+}
+
+#front-page h4 {
   width: 30vw;
   transform-origin: center;
 }
 
-#front-page-about h5 {
+#front-page h5 {
   transform-origin: center;
 }
 
-#front-page-about img {
+#front-page img {
   width: 80vw;
   max-width: 800px;
   height: 50vh;
   object-fit: cover;
 }
 
-#front-page-about button {
+#front-page button {
   font-size: 1.8rem;
   background-color: rgba(0, 0, 0, 0);
   border: 1px black solid;
@@ -121,7 +107,7 @@ p, ol {
   transition: background-color .2s ease, box-shadow .2s ease;
 }
 
-#front-page-about button:hover {
+#front-page button:hover {
   box-shadow: 2px 2px 2px blue;
 }
 
@@ -193,54 +179,15 @@ img {
   z-index: 4;
   position: fixed;
   top: 40px;
-  margin-left: 65px;
+  margin-left: 10vw;
   width: 160px;
   padding: 20px;
-}
-
-#lian {
-  font-size: 1.2rem;
-  position: fixed;
-  margin-left: 300px;
-  top: 54px;
-}
-
-#lian h3 {
-  margin-left: 400px;
-  font-size: 1.2rem;
 }
 
 #footer h1 {
   margin-top: 16px;
   font-size: 1.6rem;
   width: 400px;
-}
-
-#button-down {
-  position: fixed;
-  font-size: 2.2rem;
-  pointer-events: none;
-  bottom: 60px;
-  left: 70px;
-  text-align: center;
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  50% {
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
 }
 
 #dropdown-bar:hover {
@@ -252,41 +199,24 @@ img {
   text-decoration: underline;
 }
 
-#dropdown-bar .header-list-hidden {
-  width: 100%;
-  /*margin-top: 28px;*/
-}
-
 #dropdown-bar:hover .header-list-hidden {
   display: block;
 }
 
-#dropdown-bar .header-list-hidden li {
+.header-list-hidden {
+  width: 100%;
+}
+
+.header-list-hidden li {
   margin: 0 0 2px 0;
 }
 
-#dropdown-bar .header-list-hidden a {
+.header-list-hidden a {
   margin: 0 0 0 6px;
 }
 
 #dropdown-bar .header-list-hidden {
-  font-weight: 300;
   display: none; 
-}
-
-/* Nav hover styles */
-.dropdown-bottom {
-  position: absolute;
-  display: none;
-  height: 78%;
-  top: 190px; 
-}
-
-.dropdown-bottom img {
-  width: 90%;
-  max-height: 78%;
-  margin-left: 5%;
-  object-fit: cover; 
 }
 
 /* About Page */
@@ -294,7 +224,7 @@ img {
 #about-me {
   width: 68vw;
   max-width: 800px;
-  padding: 20vh 0 6vh 88px;
+  padding: 20vh 0 6vh calc(10vw + 23px);
 }
 
 #about-me h3 {
@@ -319,13 +249,13 @@ img {
 /* Projects Page */
 
 #guts {
-  padding: 16vh 0 6vh 88px;
+  padding: 16vh 0 6vh calc(10vw + 23px);
   width: 90%;
   max-width: 1000px;
 }
 
 #info {
-  margin-bottom: 72px;
+  margin-bottom: 56px;
 }
 
 #info h1 {
@@ -334,7 +264,7 @@ img {
 
 #guts h3 {
   font-size: 2.4rem;
-  margin: 44px 0 16px 0;
+  margin: 44px 0 22px 0;
 }
 
 #main-content .caption {
@@ -354,6 +284,11 @@ img {
   width: 100%;
 }
 
-ol {
+ol, #guts ul {
   margin: 32px 0;
+}
+
+.end-div {
+  border-bottom: 1px solid black;  
+  padding-bottom: 32px
 }

@@ -14,7 +14,6 @@ var offset = 0;
 var nameSpeed = 8;
 var nameSpeedIncrease = true;
 
-
 init();
 function init() {
 
@@ -24,8 +23,6 @@ function init() {
 	scene = new THREE.Scene();
 	renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
 
-	
-	// var plane_sq = new THREE.PlaneGeometry(340, 290, 8, 8);
 	var plane_sq = new THREE.PlaneGeometry(200, 200, 8, 8);
 	var texture_sq = new THREE.TextureLoader().load('img/green.png');
 	texture_sq.anisotropy = renderer.getMaxAnisotropy();
@@ -37,7 +34,6 @@ function init() {
 		// objects.push(name);
 		name.position.x = Math.random() * 500 - 200;
 		name.position.y = Math.random() * 300 - 300;
-		// name.position.z = Math.random() * 50 - 80;
 	}
 
 	var texture_sq_small = new THREE.TextureLoader().load('img/a111.png');
@@ -45,7 +41,6 @@ function init() {
 	var s_met_small = new THREE.MeshBasicMaterial( { map: texture_sq_small, transparent: true, color: 0xffffff} );
 	var plane_sq_small = new THREE.PlaneGeometry(200, 200, 8, 8);
 
-	// var z_pos = -10;
 	var x_pos = -280;
 
 	var top = true;
@@ -88,53 +83,35 @@ function init() {
 	animate();
 	function animate() {
 		requestAnimationFrame(animate);
-
-		// if (nameSpeedIncrease == true) {
-		// 	nameSpeed += 20;
-		// } else {
-		// 	nameSpeed -= 20;
-		// }
 		var center = new THREE.Vector2(name.position.x - plane_sq.parameters.width / 2, name.position.y - plane_sq.parameters.height / 2);  
 		offset += 0.04 + (0.3 * (mouseSpeed));
-
-		// objects[0].position.x +=
-
 		for (var j = 0; j < objects.length; j++) {
 			for (var i = 0; i < objects[j].geometry.vertices.length; i++) {
 			    var vert = objects[j].geometry.vertices[i];
-			    // console.log(center);
 			    var dist = new THREE.Vector2(vert.x, vert.y).sub(center);
 			    vert.z = Math.sin(dist.length()/32 + offset) * nameSpeed;
 			}
 			objects[j].geometry.verticesNeedUpdate = true;
 		}
-
 		renderer.render(scene, camera);    
 	}
 }
 
 window.onload = function(e) {
 	setInterval(calculateSpeed, 100);
-	// setInterval(changeNameSpeed, 400);
 };
 
 function calculateSpeed() {
 	if (mouseX == null) {
 		return;
 	}
-
 	mouseDeltaX = mouseX - lastMouseX;
 	mouseDeltaY = mouseY - lastMouseY;
-
 	var distance = Math.sqrt(mouseDeltaX ** 2 + mouseDeltaY **2);
-
 	var now = Date.now();
 	var delta = distance / (now - time);
-
-	// mouseSpeed = (delta < 0.8) ? delta : 0.8;
 	mouseSpeed = delta;
 	time = now;
-	// console.log(mouseSpeed);
 	lastMouseX = mouseX;
 	lastMouseY = mouseY;
 }
@@ -152,13 +129,10 @@ function onWindowResize() {
 
 var proj = document.querySelector("#project-section");
 var pix = document.querySelector("#pix");
-// var lian = document.querySelector("#lian"); 
 var fired = false;
-// var original_ibm = document.querySelector("#ibm-front").getBoundingClientRect().top
 
 window.addEventListener("wheel", function (e) {
 	if (e.deltaY > 1 && fired == false) {
-		// lian.style.display = "none";
 		setTimeout(function() {
 			fired = true;
 			pix.style.top = "-110vh";
@@ -168,7 +142,6 @@ window.addEventListener("wheel", function (e) {
 	if (document.querySelector("#front-page").getBoundingClientRect().top == 0 && e.deltaY < 0 && fired == true) {
 		setTimeout(function() {
 			fired = false;
-			// lian.style.display = "flex";
 			pix.style.top = "0vh";
 		}, 0);
 	}
