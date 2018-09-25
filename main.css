@@ -1,23 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
 /*
-Errno::ENOENT: No such file or directory @ rb_sysopen - stylewatch.scss
+@font-face {
+  font-family: 'Plex';
+  src: url("plex/IBMPlexSans-Regular.eot");
+  src: url("plex/IBMPlexSans-Regular.woff") format("woff"), url("plex/IBMPlexSans-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Plex';
+  src: url("plex/IBMPlexSans-Italic.eot");
+  src: url("plex/IBMPlexSans-Italic.woff") format("woff"), url("plex/IBMPlexSans-Italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Plex';
+  src: url("plex/IBMPlexSans-SemiBold.eot");
+  src: url("plex/IBMPlexSans-SemiBold.woff") format("woff"), url("plex/IBMPlexSans-SemiBold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }*/
 
-Backtrace:
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:484:in `read'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin.rb:109:in `method_missing'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
-C:/RailsInstaller/Ruby2.3.0/bin/sass:23:in `load'
-C:/RailsInstaller/Ruby2.3.0/bin/sass:23:in `<main>'
+/* Text */
+strong, b {
+  font-weight: 500; }
+
+em {
+  font-style: italic; }
+
+a,
+a:visited {
+  color: #000; }
+
+a:hover {
+  color: LightSalmon; }
+
+/*
+  ========================================
+  Custom styles
+  ========================================
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - stylewatch.scss"; }
+
+body {
+  position: absolute;
+  height: 100%;
+  color: #000;
+  opacity: .9;
+  width: 90%;
+}
+
+h1, h3, h4, h5 {
+  font: 300 2.6rem "Questrial", "Plex";
+  line-height: 3.2rem;
+  -webkit-transform: scale(1.2, 1);
+  -moz-transform: scale(1.2, 1);
+  transform: scale(1.2, 1);
+  transform-origin: left;
+}
+
+p, ol {
+  font: 300 1.8rem "Questrial", "Plex";
+  line-height: 2.4rem;
+  /*letter-spacing: -1px;*/
+}
+
+.all {
+  -webkit-animation: fadein .6s ease-out;
+  animation: fadein .6s ease-out; 
+}
+
+.title {
+  font-family: serif;
+  font-size: 1.88rem;
+  margin-bottom: 10px;
+}
+
+#front-page-about {
+  flex: 30%;
+  padding: 20vh 0 6vh 88px;
+}
+
+#front-page-about h1 {
+  margin: 30px 0;
+}
+
+#front-page-about h3 {
+  height: auto;
+  max-width: 640px;
+  min-width: 300px;
+  width: 60vw;
+}
+
+.front h3 {
+  margin-bottom: 30px;
+}
+
+#front-page-about h4 {
+  width: 30vw;
+  transform-origin: center;
+}
+
+#front-page-about h5 {
+  transform-origin: center;
+}
+
+#front-page-about img {
+  width: 80vw;
+  max-width: 800px;
+  height: 50vh;
+  object-fit: cover;
+}
+
+#front-page-about button {
+  font-size: 1.8rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px black solid;
+  height: 50px;
+  width: 20vw;
+  min-width: 400px;
+  box-shadow: 0;
+  padding: 10px 20px;
+  transition: background-color .2s ease, box-shadow .2s ease;
+}
+
+#front-page-about button:hover {
+  box-shadow: 2px 2px 2px blue;
+}
+
+.front {
+  width: 74vw;
+  max-width: 800px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid black;  
+  /*margin-bottom: 60px;*/
+}
+
+.front:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.project {
+  border-bottom: 1px black solid;
+  -webkit-transform: scale(1.24, 1);
+  -moz-transform: scale(1.24, 1);
+  transform: scale(1.24, 1); 
+  padding-bottom: 40px;
+}
+
+#pix {
+  /*min-height: 1000px;*/
+  top: 0;
+  z-index: 2;
+  position: fixed;
+  pointer-events: none;
+  transition: top 2.2s ease;
+  opacity: 0.8;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } 
+}
+
+img {
+  background-color: #d6d6d6; 
+}
+
+/* Nav */
+
+#dropdown-bar, #button-down {
+  font: 300 1.6rem "Questrial", "Plex";
+  line-height: 1.8rem;
+  -webkit-transform: scale(1.2, 1);
+  -moz-transform: scale(1.2, 1);
+  transform: scale(1.2, 1);
+  transform-origin: left;
+}
+
+#back-button {
+  white-space: nowrap; 
+}
+
+#back-button a {
+  text-decoration: none;
+}
+
+#dropdown-bar, #button-down {
+  z-index: 1;
+}
+
+#dropdown-bar {
+  z-index: 4;
+  position: fixed;
+  top: 40px;
+  margin-left: 65px;
+  width: 160px;
+  padding: 20px;
+}
+
+#lian {
+  font-size: 1.2rem;
+  position: fixed;
+  margin-left: 300px;
+  top: 54px;
+}
+
+#lian h3 {
+  margin-left: 400px;
+  font-size: 1.2rem;
+}
+
+#footer h1 {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  width: 400px;
+}
+
+#button-down {
+  position: fixed;
+  font-size: 2.2rem;
+  pointer-events: none;
+  bottom: 60px;
+  left: 70px;
+  text-align: center;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+#dropdown-bar:hover {
+  outline: 1px solid;
+  background-color: white;
+}
+
+#dropdown-bar:hover > #back-button a {
+  text-decoration: underline;
+}
+
+#dropdown-bar .header-list-hidden {
+  width: 100%;
+  /*margin-top: 28px;*/
+}
+
+#dropdown-bar:hover .header-list-hidden {
+  display: block;
+}
+
+#dropdown-bar .header-list-hidden li {
+  margin: 0 0 2px 0;
+}
+
+#dropdown-bar .header-list-hidden a {
+  margin: 0 0 0 6px;
+}
+
+#dropdown-bar .header-list-hidden {
+  font-weight: 300;
+  display: none; 
+}
+
+/* Nav hover styles */
+.dropdown-bottom {
+  position: absolute;
+  display: none;
+  height: 78%;
+  top: 190px; 
+}
+
+.dropdown-bottom img {
+  width: 90%;
+  max-height: 78%;
+  margin-left: 5%;
+  object-fit: cover; 
+}
+
+/* About Page */
+
+#about-me {
+  width: 68vw;
+  max-width: 800px;
+  padding: 20vh 0 6vh 88px;
+}
+
+#about-me h3 {
+  font-size: 4.2rem;
+  line-height: 4.8rem;
+}
+
+.background-pic {
+  height: 110%; 
+  position: absolute; 
+  z-index: -2;
+}
+
+#about-me-pic {
+  position: sticky;
+  top: 20px;
+  margin: 6% 0 0 52vw;
+  width: 36vw;
+  min-width: 360px; 
+}
+
+/* Projects Page */
+
+#guts {
+  padding: 16vh 0 6vh 88px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#info {
+  margin-bottom: 72px;
+}
+
+#info h1 {
+  font-size: 2.4rem;
+}
+
+#guts h3 {
+  font-size: 2.4rem;
+  margin: 44px 0 16px 0;
+}
+
+#main-content .caption {
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#guts img {
+  margin: 32px 0;
+  width: 100%;
+}
+
+.mult-img {
+  display: flex;
+  width: 100%;
+}
+
+ol {
+  margin: 32px 0;
+}

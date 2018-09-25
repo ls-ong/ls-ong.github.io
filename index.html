@@ -1,162 +1,91 @@
 <!DOCTYPE html>
-<!-- Hey, I made this website! Welcome in :^) -->
-<html lang="en">
+<html>
+	<head>
+		<script type="text/javascript" src="js/three.min.js"></script>
+		<link rel="stylesheet" href="housekeeping.css">
+    	<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div id="pix"></div>
 
-  <head>
-
-    <meta charset="utf-8">
-
-    <base href="." target="_blank">
-    <meta name="description" content="Lian Song is a product and visual designer, currently studying Cognitive Science, Data Science, and Human Centered Design at UC Berkeley.">
-
-    <title>Lian Song</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108136201-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-108136201-1');
-	</script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.color-2.1.2.min.js"></script>
-  
-  </head>
-
-  <body id="splash" bgcolor="#5647ff">
-
-  	<div id="earth-p" hidden="hidden"></div>
-
-  	<!--
-
-	<iframe src="mesh.html" width="110%" height="120%" scrolling="no" style="margin: -8% -20% 0 -10%; position: absolute; z-index: -1"></iframe>
-
-	-->
-
-	<video id="back-vid" loop muted autoplay>
-		<source src="assets/stylesheets/images/22.mp4" type="video/mp4">
-	</video>
-
-	<div id="index">
-		<div id="guts-flash">
-			<h1><strong>Hi, I'm Lian &mdash; Product &amp; Visual Designer</strong></h1>
-
-			<div class="subh">
-				<h4>External VP at <a href="https://berkeleyinnovation.org/">Berkeley Innovation</a>, leading <a href="http://skydeck.berkeley.edu">SkyDeck</a> Design, studying Cognitive &amp; Data Science at UC Berkeley. I'll be joining <a href="https://www.ibm.com/design/">IBM Design</a> this summer. Check out my work, or find out more <a href="about.html" target="_self" id="about-button">about me</a> <span id="arrow">→</span></h4>
+		<div id="dropdown-bar">
+			<div id="back-button">
+				<h2>Navigation</h2>
+			</div>
+			<div class="header-list-hidden">
+				<ul style="margin-top: 2px">
+					<li><a href="about.html" style="margin-left: 0">About Me</a></li>
+				</ul>
+				<br>
+				<ul>
+					<li style="margin-bottom: 8px">Work</li>
+					<li><a href="ibm.html" id="ibm">IBM</a></li>
+					<li><a href="rainforest.html" id="rainforest">Rainforest QA</a></li>
+					<li><a href="actransit.html" id="ac">ACTransit</a></li>
+					<li><a href="hexa.html" id="hexa">Hexa Tea</a></li>
+					<li><a href="bimarketing.html" id="hexa">BI Marketing</a></li>
+					<li><a href="etc.html" id="hexa">Etc.</a></li>
+				<ul>
+				<br>
+				<ul>
+					<li style="margin-bottom: 8px">Let's Connect</li>
+					<li><a href="assets/lian_resume_f18.pdf" target="_blank">Resume</a></li>
+					<li><a href="https://www.linkedin.com/in/lian-song/" target="_blank">LinkedIn</a></li>
+					<li><a href="mailto:hello@liansong.co" target="_self">Email</a></li>
+				</ul>
 			</div>
 		</div>
 
-		<nav class="nav-web">
-	    	<div class="bar">
-			  	<h5>UI/UX</h5>
-			  		
-			  		<ul>
-			  			<li><a href="rainforest.html" id="rainf" class="hvr-backward">Rainforest QA</a></li>
-			  			<li><a href="hexa.html" id="hexa" class="hvr-backward">Hexa Tea</a></li>
-			  			<li><a href="actransit.html" id="act" class="hvr-backward">AC Transit</a></li>
-			  			<!-- <li><a href="divein.html" id="dive" class="hvr-backward">Dive In</a></li> -->
-			  		</ul>
-		  	</div>
 
-		  	<div class="bar">
-			  	<h5>Visual</h5>
+		<div id="front-page">
+			<div id="front-page-about">
+				<h3 style="margin-bottom: 10vh">
 
-			  		<ul>
-			  			<li><a href="bimarketing.html" id="bi" class="hvr-backward">BI Marketing</a></li>
-			  			<li><a href="flyers.html" id="flyers" class="hvr-backward">Flyers &amp; Logos</a></li>
-			  		</ul>
-		  	</div>
+				My name is Lian (or Li&#8209;an, or 立安). I'm a multidisciplinary Human Centered Designer in the Bay, with something to say and a whole lot to prove. This is my work.
 
-		  	<div class="bar">
-		  	<h5>Photo</h5>
-		  		
-		  		<ul>
-		  			<li><a href="world.html" id="world" class="hvr-backward">Collection #1</a></li>
-		  		</ul>
-		  	</div>
+				<br><br>
 
-		  	<div class="bar bar2">
-		  	<h5>Let's connect!</h5>
+				Previously, I was an intern at IBM Design; currently, I am president of Berkeley Innovation. Feel free to ping me at <a href="mailto:hello@liansong.co">hello@liansong.co</a>. (Especially if you're a fellow Berkeley student, please don't hesitate to reach out! I'd love to talk.)
 
-		  		<ul>
-		  			<li><a href="mailto:hello@liansong.co" target="_self">hello@liansong.co</a></li>
-		  			<li><a href="assets/lianResume.pdf">Resume</a></li>
-		  			<li><a href="https://www.linkedin.com/in/lian-song/">LinkedIn</a></li>
-		  		<ul>
-		  	</div>
-		</nav>
-	</div>
+				<br><br>
 
-	<!--Hidden-->
+				See my work below or find out more <a href="about.html">about me</a> <span id="arrow">&#10230;</span>
+				<!-- &nbsp;
+				&nbsp; -->
+				</h3>
 
-	<div class="hidden">
+				<div class="front">
+					<img src="img/IBM.jpg" alt="IBM"></img>
+					<h1>IBM Design &mdash; Summer 2018</h1>
+					<h3>Imagining a way to make infection prevention and control more accessible in low resource settings.</h3>
 
-	  	<div id="rainf-new" hidden="hidden">
+					<a href="ibm.html" style="text-decoration: none;"><button><h5>IBM Case Study</h5></button></a>
+				</div>
 
-	  		<h2>Rain&shy;forest QA</h2>
-	  		<p class="f-caption">A quest to automate quality assurance<br><em>Interaction Design, UI/UX</em></p>
+				<div class="front">
+					<img src="img/IBM.jpg" alt="IBM"></img>
+					<h1>Rainforest QA &mdash; Summer 2017</h1>
 
-			<img src="assets/stylesheets/images/rfqa_s.png" class="logo-flash" alt="rainforest screen">
+					<h3>Designing key interactions for Rainforest's test execution user flow; scaling design processes in a start up environment.</h3>
 
-	  	</div>
-	  	<div id="hexa-new" hidden="hidden">
+					<button><h5><a href="rainforest.html" style="text-decoration: none;">Rainforest Case Study</a></h5></button>
+				</div>
 
-	  		<h2>Hexa Tea</h2>
-	  		<p class="f-caption">Re-imagining the teahouse experience<br><em>UX Research, Service Design</em></p>
+				<div class="front" style="margin-bottom: 0">
+					<img src="img/IBM.jpg" alt="IBM"></img>
+					<h1>Hexa Tea &mdash; Fall 2016</h1>
 
-	  		<img src="assets/stylesheets/images/menu_s.png" class="logo-flash" alt="hexa tea menu"><br>
+					<h3>Re-envisioning the tea house experience for a more modern Berkeley environment</h3>
 
-	  	</div>
-	  	<div id="act-new" hidden="hidden">
+					<button><h5><a href="hexa.html" style="text-decoration: none;">Hexa Tea Case Study</a></h5></button>
+				</div>
+				<div id="footer">
+					<h1>Website made by Lian &mdash; <a href="mailto:hello@liansong.co">hello@liansong.co</a></h1>
+				</div>
+			</div>
 
-	  		<h2>AC Transit</h2>
-	  		<p class="f-caption">Making the Berkeley bus system friendlier<br><em>Mobile App Design, UI/UX</em></p>
-	  		
-	  		<img src="assets/stylesheets/images/screens_s.png" class="logo-flash" alt="ac transit pointers"><br>
+		</div>
 
-	  	</div>
-	  	<div id="dive-new" hidden="hidden">
-
-	  		<h2>Dive In</h2>
-	  		<p class="f-caption">An event page for community engagement<br><em>Web Design, UI/UX</em></p>
-	  		
-	  		<img src="assets/stylesheets/images/divein_s.png" class="logo-flash" alt="dive in float"><br>
-
-	  	</div>
-	  	<div id="bi-new" hidden="hidden">
-
-	  		<h2>Berkeley Innovation Marketing</h2>
-	  		<p class="f-caption">Design assets for Berkeley Innovation<br><em>Visual Design, Adobe Creative Suite</em></p>
-	  		
-	  		<img src="assets/stylesheets/images/bi_s.png" class="logo-flash" alt="bi marketing flyer"><br>
-
-	  	</div>
-	  	<div id="flyers-new" hidden="hidden">
-
-	  		<h2>Flyers &amp; Logos</h2>
-	  		<p class="f-caption">A collection of flyers and logos<br><em>Visual Design, Adobe Creative Suite</em></p>
-
-	  		
-	  		<img src="assets/stylesheets/images/flyers_s.png" class="logo-flash" alt="flyers logo"><br>
-	  	</div>
-		<div id="world-new" hidden="hidden">
-
-	  		<h2>Collection<br>#1</h2>
-	  		<p class="f-caption">Moments in a life<br><em>Photography</em></p>
-	  		
-	  		<img src="assets/stylesheets/images/blobs.jpg" style="height: 80vh; width: 58vw; opacity: .8; object-fit: cover;" class="logo-flash" alt="picture"><br>
-
-	  	</div>
-	</div>
-
-	<footer>
-		<h5>&#60;&#47;&#62; by Lian</h5>
-	</footer>
-
-  </body>
+		<script src="js/main.js"></script>
+	</body>
+</html>
