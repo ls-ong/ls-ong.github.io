@@ -15,6 +15,10 @@ a:visited {
 a:hover {
   color: LightSalmon; }
 
+#dropdown-bar ul {
+  list-style: none;
+}
+
 /*
   ========================================
   Custom styles
