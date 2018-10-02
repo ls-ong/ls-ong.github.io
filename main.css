@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial");
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700");
 
 /* Text */
 strong, b {
-  font-weight: 600; }
+  font-weight: 500; }
 
 em {
   font-style: italic; }
@@ -38,7 +39,7 @@ h1, h3, h4, h5 {
 }
 
 p, ol, #guts ul {
-  font: 300 1.8rem "Questrial", "Plex";
+  font: 300 1.6rem "Rubik", "Questrial", "Plex";
   line-height: 2.4rem;
   /*letter-spacing: .1px;*/
 }
@@ -89,7 +90,7 @@ p, ol, #guts ul {
 }
 
 #front-page img {
-  width: 80vw;
+  width: 74vw;
   max-width: 800px;
   height: 50vh;
   object-fit: cover;
@@ -113,8 +114,9 @@ p, ol, #guts ul {
 
 .front {
   width: 74vw;
+  /*height: 40vh;*/
   max-width: 800px;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   border-bottom: 1px solid black;  
   /*margin-bottom: 60px;*/
 }
@@ -224,7 +226,7 @@ img {
 #about-me {
   width: 68vw;
   max-width: 800px;
-  padding: 20vh 0 6vh calc(10vw + 23px);
+  padding: 20vh 0 6vh calc(10vw + 21px);
 }
 
 #about-me h3 {
@@ -249,13 +251,14 @@ img {
 /* Projects Page */
 
 #guts {
-  padding: 16vh 0 6vh calc(10vw + 23px);
-  width: 90%;
+  padding: 16vh 4vw 6vh calc(10vw + 23px);
+  width: 82%;
   max-width: 1000px;
+  margin-bottom: 60px;
 }
 
 #info {
-  margin-bottom: 56px;
+  margin: 50px 0 70px 0;
 }
 
 #info h1 {
@@ -264,18 +267,18 @@ img {
 
 #guts h3 {
   font-size: 2.4rem;
-  margin: 44px 0 22px 0;
+  margin: 64px 0 22px 0;
 }
 
 #main-content .caption {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   width: 100%;
   text-align: center;
   margin-bottom: 32px;
 }
 
 #guts img {
-  margin: 32px 0;
+  margin: 28px 0 16px 0;
   width: 100%;
 }
 
@@ -290,5 +293,21 @@ ol, #guts ul {
 
 .end-div {
   border-bottom: 1px solid black;  
-  padding-bottom: 32px
+  padding-bottom: 56px
+}
+
+#two-gif {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 28px 0 28px 0;
+}
+
+#two-gif img {
+  /*margin: 0;*/
+  width: initial;
+  box-shadow: 2px 6px 12px #888888;
+  height: 100%;
+  margin: 0 40px;
 }
