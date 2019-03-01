@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial");
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700");
 
+
 /* Text */
 strong, b {
   font-weight: 500; }
@@ -27,6 +28,7 @@ a:hover {
 
 body {
   position: absolute;
+  background-color: #ffe8e0;
   height: 100%;
   color: #000;
   opacity: .9;
@@ -100,6 +102,7 @@ p, ol, #guts ul {
   max-width: 800px;
   height: 50vh;
   object-fit: cover;
+  border: 1px solid black;
 }
 
 #front-page button {
@@ -120,15 +123,13 @@ p, ol, #guts ul {
 
 .front {
   width: 74vw;
-  /*height: 40vh;*/
   max-width: 800px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   border-bottom: 1px solid black;  
-  /*margin-bottom: 60px;*/
 }
 
 .front:not(:last-child) {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .project {
@@ -268,8 +269,8 @@ img {
   margin: 50px 0 70px 0;
 }
 
-#info h1 {
-  font-size: 2.4rem;
+#info h5 {
+  font-size: 3.2rem;
 }
 
 #guts h3 {
