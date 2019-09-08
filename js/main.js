@@ -36,15 +36,17 @@ function init() {
 		name.position.y = Math.random() * 300 - 300;
 	}
 
-	var texture_sq_small = new THREE.TextureLoader().load('img/a111.png');
+	var texture_sq_small = new THREE.TextureLoader().load('img/Asset 7.png');
 	texture_sq_small.anisotropy = renderer.getMaxAnisotropy();
 	var s_met_small = new THREE.MeshBasicMaterial( { map: texture_sq_small, transparent: true, color: 0xffffff} );
 	var plane_sq_small = new THREE.PlaneGeometry(200, 200, 8, 8);
 
-	var x_pos = -280;
+	var x_pos = -180;
+	var z_pos = 0;
+	var counter = 0;
 
-	var top = true;
-	for (i = 0; i < 12; i++) {
+	var top = false;
+	for (i = 0; i < 4; i++) {
 		var desc = new THREE.Mesh(plane_sq_small, s_met_small);
 		desc.material.side = THREE.DoubleSide;
 
@@ -55,27 +57,31 @@ function init() {
 		else {
 			desc.position.x = x_pos;
 			if (top == true) {
-				desc.position.y = Math.random() * 30 + 90;
+				desc.position.y = Math.random() * 30 + 60;
 				top = false;
 			} else {
-				desc.position.y = Math.random() * 120 + -150;
+				desc.position.y = Math.random() * 20 + -60;
 				top = true;
 			}
 		}
-		desc.position.z = Math.random() * 40 - 10;
+
+		// desc.position.y = Math.random() * 100 - 50
+		desc.position.z = z_pos;
 		desc.rotation.z = Math.PI / -26;
 		desc.rotation.x = Math.PI / -12;
-		x_pos += 100 + Math.random() * 20;
+		x_pos += 120 + Math.random() * 30;
+		z_pos += 50 + Math.random() * 60;
 
 		scene.add(desc);
 		objects.push(desc);
 	}
 
+	var selection = document.getElementById("pix");
+
 	renderer.setClearColor(0x000000, 0);
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth , window.innerHeight );
 
-	var selection = document.getElementById("pix");
 	selection.appendChild(renderer.domElement);
 
 	window.addEventListener('resize', onWindowResize, false);
@@ -84,7 +90,7 @@ function init() {
 	function animate() {
 		requestAnimationFrame(animate);
 		var center = new THREE.Vector2(name.position.x - plane_sq.parameters.width / 2, name.position.y - plane_sq.parameters.height / 2);  
-		offset += 0.04 + (0.3 * (mouseSpeed));
+		offset += 0.04 + (0.2 * (mouseSpeed));
 		for (var j = 0; j < objects.length; j++) {
 			for (var i = 0; i < objects[j].geometry.vertices.length; i++) {
 			    var vert = objects[j].geometry.vertices[i];
@@ -136,7 +142,7 @@ window.addEventListener("wheel", function (e) {
 		setTimeout(function() {
 			fired = true;
 			pix.style.top = "-110vh";
-		}, 100);
+		}, 20);
 	}
 
 	if (document.querySelector("#front-page").getBoundingClientRect().top == 0 && e.deltaY < 0 && fired == true) {
