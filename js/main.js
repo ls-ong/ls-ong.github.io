@@ -90,12 +90,12 @@ function init() {
 	function animate() {
 		requestAnimationFrame(animate);
 		var center = new THREE.Vector2(name.position.x - plane_sq.parameters.width / 2, name.position.y - plane_sq.parameters.height / 2);  
-		offset += 0.04 + (0.2 * (mouseSpeed));
+		offset += 0.10 + (0.2 * (mouseSpeed));
 		for (var j = 0; j < objects.length; j++) {
 			for (var i = 0; i < objects[j].geometry.vertices.length; i++) {
 			    var vert = objects[j].geometry.vertices[i];
 			    var dist = new THREE.Vector2(vert.x, vert.y).sub(center);
-			    vert.z = Math.sin(dist.length()/32 + offset) * nameSpeed;
+			    vert.z = Math.sin(dist.length()/40 + offset) * nameSpeed;
 			}
 			objects[j].geometry.verticesNeedUpdate = true;
 		}
@@ -142,7 +142,7 @@ window.addEventListener("wheel", function (e) {
 		setTimeout(function() {
 			fired = true;
 			pix.style.top = "-110vh";
-		}, 20);
+		}, 160);
 	}
 
 	if (document.querySelector("#front-page").getBoundingClientRect().top == 0 && e.deltaY < 0 && fired == true) {

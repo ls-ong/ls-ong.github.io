@@ -63,12 +63,12 @@ p, ol, #guts ul {
 }
 
 #front-page h3 {
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   line-height: 5.2rem;
   height: auto;
   max-width: 800px;
+  min-width: 700px;
   width: 60vw;
-  min-width: 300px;
   margin: 0 auto;
   display: flex;
   align-items: flex-start;
@@ -97,10 +97,7 @@ p, ol, #guts ul {
 .right-column {
   position: absolute;
   margin-top: 20vh;
-}
-
-.right-column {
-  margin-left: 45vw;
+  margin-left: 44vw;
 }
 
 .front h1 {
@@ -115,8 +112,9 @@ p, ol, #guts ul {
 }
 
 .front {
-  width: 40vw;
+  width: 38vw;
   max-width: 700px;
+  min-width: 400px;
   padding: 30px;
   margin: 50px 0;
   transition: background-color .2s ease;
@@ -133,6 +131,7 @@ p, ol, #guts ul {
   position: relative;
   overflow: hidden;
   height: 40vh;
+  /*min-width: 200px; */
   transition: outline 0s ease;
 }
 
