@@ -66,7 +66,7 @@ p, ol, #guts ul {
   font-size: 4.2rem;
   line-height: 5.2rem;
   height: auto;
-  max-width: 800px;
+  max-width: 1200px;
   min-width: 700px;
   width: 60vw;
   margin: 0 auto;
@@ -238,13 +238,21 @@ p, ol, #guts ul {
 
 /* About page */
 
-#about-me {
-  padding: 20vh 0 85px calc(10vw + 21px);
+#about-page h3 {
+  font-size: 4.2rem;
+  line-height: 5.2rem;
+  height: auto;
+  max-width: 1200px;
+  min-width: 700px;
+  width: 60vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-#about-me h3 {
-  font-size: 4.2rem;
-  line-height: 4.8rem;
+#about-me {
+  padding: 20vh 0 85px calc(10vw + 21px);
 }
 
 .background-pic {
