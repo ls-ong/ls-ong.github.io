@@ -288,12 +288,12 @@ p, ol, #guts ul {
 #info h5 em {
   font-size: 2.8rem;
   /*font-weight: 300;*/
-  /*font-style: normal;*/
+  font-style: normal;
 }
 
 #info {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
   border-bottom: 2px solid black;
 }
 
