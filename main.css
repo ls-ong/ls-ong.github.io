@@ -246,10 +246,6 @@ p, ol, #guts ul {
   max-width: 1200px;
   min-width: 700px;
   width: 60vw;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 #about-me {
