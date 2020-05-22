@@ -66,14 +66,14 @@ p, ol, #guts ul {
   font-size: 4.2rem;
   line-height: 5.2rem;
   height: auto;
-  max-width: 1200px;
-  min-width: 700px;
+  max-width: 800px;
+  min-width: 600px;
   width: 60vw;
   margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
+  /*display: flex;*/
+/*  align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
 }
 
 #front-page h4 {
@@ -92,7 +92,7 @@ p, ol, #guts ul {
 
 #front-body {
   display: flex;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .right-column {

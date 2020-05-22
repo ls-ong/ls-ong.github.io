@@ -70,7 +70,7 @@ window.addEventListener('mousemove', function (e) {
 });
 
 window.onload = function() {
-	setInterval(calculateSpeed, 200);
+	setInterval(calculateSpeed, 1200);
 };
 
 function onWindowResize() {
