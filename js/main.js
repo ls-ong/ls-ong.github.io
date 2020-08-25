@@ -36,7 +36,7 @@ function init() {
 		name.position.y = Math.random() * 300 - 300;
 	}
 
-	var texture_sq_small = new THREE.TextureLoader().load('img/Asset 7.png');
+	var texture_sq_small = new THREE.TextureLoader().load('img/7.png');
 	texture_sq_small.anisotropy = renderer.getMaxAnisotropy();
 	var s_met_small = new THREE.MeshBasicMaterial( { map: texture_sq_small, transparent: true, color: 0xffffff} );
 	var plane_sq_small = new THREE.PlaneGeometry(200, 200, 8, 8);
@@ -104,7 +104,7 @@ function init() {
 }
 
 window.onload = function(e) {
-	setInterval(calculateSpeed, 100);
+	setInterval(calculateSpeed, 400);
 };
 
 function calculateSpeed() {
@@ -122,10 +122,10 @@ function calculateSpeed() {
 	lastMouseY = mouseY;
 }
 
-window.addEventListener('mousemove', function (e) {
-	mouseX = e.clientX;
-	mouseY = e.clientY;
-});
+// window.addEventListener('mousemove', function (e) {
+// 	mouseX = e.clientX;
+// 	mouseY = e.clientY;
+// });
 
 function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
