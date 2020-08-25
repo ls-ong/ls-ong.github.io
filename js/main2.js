@@ -9,7 +9,7 @@ window.addEventListener("wheel", function (e) {
 			fired = true;
 			pix.style.top = "-110vh";
 			// text.innerHTML = "Lian Song"
-			// text.style.backgroundColor = "rgba(232, 168, 149, .8)"
+			// text.style.backgroundColor = "rgba(232, 168, 149, .2)"
 			text.style.textDecoration = "underline"
 			text.style.fontWeight = 400
 		}, 160);
