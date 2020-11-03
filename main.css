@@ -232,7 +232,7 @@ p, ol, #guts ul {
 
   .right-column {
     margin: 0 auto;
-    padding-bottom: 140px;
+    padding-bottom: 80px;
     width: 94%;
   }
 
@@ -248,6 +248,76 @@ p, ol, #guts ul {
     display: none;
   }
 } 
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
+
+  h1, h3, h4, h5 {
+    font: 300 5.2rem acumin-pro-wide, sans-serif;
+  }
+
+  .front h1, .front h5 {
+    font-size: 5.2rem;
+    line-height: 5.8rem;
+  }
+
+  #front-page h3 {
+    font-size: 6rem;
+    line-height: 7.2rem;
+  }
+
+  #front-body{
+    display: inline;
+  }
+
+  #front-page h3 {
+    width: 74vw;
+  }
+
+  #front-page #b-h3 {
+    display: block;
+    border-bottom: 2px solid black;
+    padding-bottom: 120px;
+    margin-bottom: 100px;
+  }
+
+  .front .image-frame {
+    height: 450px;
+    padding-bottom: 30px;
+  }
+
+  #resume-line {
+    display: inline;
+  }
+
+  .front {
+    margin: 120px auto;
+    width: 100vw;
+    max-width: 750px;
+    padding: 0;
+  }
+
+  #front-first {
+    margin-top: 40px; 
+  }
+
+  .right-column {
+    margin: 0 auto;
+    padding-bottom: 80px;
+    width: 94%;
+  }
+
+  #ibm-mobile {
+    display: block;
+  }
+
+  #ibm-desktop {
+    display: none;
+  }
+
+  #footer, #dropdown-bar {
+    display: none;
+  }
+}
 
 /* Dropdown */
 
@@ -384,6 +454,9 @@ p, ol, #guts ul {
   border-bottom: 2px solid black;
 }
 
+.dropbox-text {
+  line-height: 3rem
+}
 
 #guts h3 {
   /*font-size: 2.4rem;*/
@@ -453,6 +526,59 @@ ol, #guts ul {
 @media only screen and (max-width: 800px) {
   #guts{
       padding: 80px 0 100px 0
+  }
+
+  #two-gif {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  #two-gif img {
+    width: 80%;
+    box-shadow: 2px 2px 24px #c9c9c9;
+    height: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 850px) {
+
+  h1, h3, h4, h5 {
+    font: 300 5.2rem acumin-pro-wide, sans-serif;
+  }
+
+  p, ol, #guts ul {
+    font: 300 3.6rem pragmatica, sans-serif;
+    line-height: 4.3rem;
+  }
+
+  #main-content .caption {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    margin: -12px 0 64px 0;
+  }
+
+  #guts h3 {
+    margin-bottom: 50px;
+  }
+
+  #info h5 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+
+  #info {
+    padding-bottom: 60px;
+    margin-bottom: 120px;
+  }
+
+  #guts{
+      padding: 80px 0 100px 0
+  }
+
+  .dropbox-text {
+    line-height: 5.8rem
   }
 
   #two-gif {
