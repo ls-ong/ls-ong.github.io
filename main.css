@@ -593,7 +593,7 @@ ol, #guts ul {
   #two-gif img {
     width: 80vw;
     box-shadow: 2px 2px 24px #c9c9c9;
-    height: 100%;
+    height: auto;
     margin: 10px 0;
   }
 }
