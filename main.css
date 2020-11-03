@@ -260,9 +260,13 @@ p, ol, #guts ul {
     line-height: 5.8rem;
   }
 
+  #front-page {
+    padding: 130px 3vw 65px 3vw;
+  }
+
   #front-page h3 {
     font-size: 6rem;
-    line-height: 7.2rem;
+    line-height: 6.8rem;
   }
 
   #front-body{
