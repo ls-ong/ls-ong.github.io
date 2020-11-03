@@ -100,6 +100,7 @@ p, ol, #guts ul {
 #front-body {
   display: flex;
   margin: 100px 0 60px 0;
+  /*max-width: 1100px;*/
   padding-bottom: 60px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -130,7 +131,7 @@ p, ol, #guts ul {
 
 .front {
   width: 47vw;
-  max-width: 700px;
+  max-width: 1000px;
   min-width: 300px;
   padding: 20px;
   margin: 60px 0 20px 0;
@@ -199,8 +200,20 @@ p, ol, #guts ul {
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
 
+@media only screen and (min-width: 1500px) {
+  #front-page h3 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+    max-width: 920px;
+  }
+
+  .front .image-frame {
+    height: 460px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   #front-body{
     display: inline;
   }
