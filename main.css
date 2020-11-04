@@ -418,6 +418,14 @@ p, ol, #guts ul {
   /*width: 60vw;*/
 }
 
+#about-1 {
+  width: 60%;
+}
+
+#about-2 {
+  width: 80%;
+}
+
 #about-me {
   padding: 85px 10vw 85px calc(16vw + 21px);
 }
@@ -556,6 +564,25 @@ ol, #guts ul {
     height: 100%;
     margin: 10px 0;
   }
+
+  #about-1 {
+    width: 100%;
+  }
+
+  #about-2 {
+    width: 100%;
+  }
+
+  #about-me {
+    padding: 100px 40px 140px 40px;
+    /*margin: 30px 0 30px 0;;*/
+  }
+
+  #about-me-pic {
+    position: fixed;
+    margin: 70vh 0 0 36vh;
+    width: 42vw;
+  }
 }
 
 
@@ -608,5 +635,29 @@ ol, #guts ul {
     box-shadow: 2px 2px 24px #c9c9c9;
     height: 70vh;
     margin: 10px 0;
+  }
+
+  #about-1 {
+    width: 100%;
+  }
+
+  #about-2 {
+    width: 100%;
+  }
+
+  #about-me {
+    padding: 100px 40px 20vh 40px;
+    /*margin: 30px 0 30px 0;;*/
+  }
+
+  #about-page h3 {
+    font-size: 5.2rem;
+    line-height: 5.8rem;
+  }
+
+  #about-me-pic {
+    position: fixed;
+    margin: 70vh 0 0 40vw;
+    width: 52vw;
   }
 }
