@@ -441,9 +441,9 @@ p, ol, #guts ul {
 #about-me-pic {
   position: sticky;
   top: -60px;
-  margin: 8vh 0 0 57vw;
-  width: 34vw;
-  opacity: .9;
+  margin: 12vh 0 0 58vw;
+  width: 37vw;
+  opacity: .95;
   min-width: 280px; 
   max-width: 500px; 
 }
@@ -584,8 +584,8 @@ ol, #guts ul {
 
   #about-me-pic {
     position: fixed;
-    margin: 70vh 0 0 36vh;
-    width: 42vw;
+    margin: 72vh 0 0 36vh;
+    width: 48vw;
   }
 }
 
