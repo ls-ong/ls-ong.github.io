@@ -57,8 +57,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: black;
-  font: 300 2.6rem serif;
-  letter-spacing: -0.2px;
+  font: 300 9rem serif;
+  letter-spacing: -4px;
+  word-spacing: -4px;
 }
 
 h1 {
